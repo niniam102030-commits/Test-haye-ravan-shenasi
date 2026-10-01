@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { TestCard } from './components/TestCard';
-import { ProposedTestCard } from './components/ProposedTestCard';
 import { TestRunner } from './components/TestRunner';
 import { ResultDashboard } from './components/ResultDashboard';
 import { ClientsView } from './components/ClientsView';
-import { CouplesMatchView } from './components/CouplesMatchView';
+import { TwoPersonsMatchView } from './components/TwoPersonsMatchView';
+import { ProfileSelectModal } from './components/ProfileSelectModal';
 import { testsIndex } from './data';
-import { proposedTests } from './data/proposedTests';
 import {
   Compass,
-  Beaker,
   AlertTriangle,
   ShieldCheck,
   Play,
   RotateCcw,
   BookmarkCheck,
   Users,
-  Heart,
+  ArrowRightLeft,
 } from 'lucide-react';
 import { TestDefinition, TestResult, DetailedAnswerItem, SavedDraft, ClientProfile } from './types';
 import { getAllDrafts, getDraft, removeDraft } from './utils/draftStorage';
@@ -27,13 +25,14 @@ import { getActiveClient, saveTestResultToHistory } from './utils/clientStorage'
 function App() {
   const [counselorMode, setCounselorMode] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
-  const [activeTab, setActiveTab] = useState<'tests' | 'clients' | 'couples' | 'proposed'>('tests');
+  const [activeTab, setActiveTab] = useState<'tests' | 'clients' | 'couples'>('tests');
 
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null);
   const [activeTest, setActiveTest] = useState<TestDefinition | null>(null);
   const [activeResult, setActiveResult] = useState<TestResult | null>(null);
   const [showDisclaimer, setShowDisclaimer] = useState(false);
   const [showDraftModal, setShowDraftModal] = useState<SavedDraft | null>(null);
+  const [profileModalTest, setProfileModalTest] = useState<TestDefinition | null>(null);
 
   const [drafts, setDrafts] = useState<Record<string, SavedDraft>>({});
   const [activeClient, setActiveClient] = useState<ClientProfile | null>(null);
@@ -58,8 +57,16 @@ function App() {
   const handleStartTestAttempt = (id: string) => {
     const test = testsIndex[id];
     if (!test) return;
+    // Always prompt who is taking the test
+    setProfileModalTest(test);
+  };
 
-    setSelectedTestId(id);
+  const handleProfileChosen = (profile: ClientProfile) => {
+    if (!profileModalTest) return;
+    const test = profileModalTest;
+    setProfileModalTest(null);
+    setSelectedTestId(test.id);
+    setActiveClient(profile);
 
     // Check for draft
     const existingDraft = getDraft(test.id);
@@ -136,9 +143,7 @@ function App() {
     refreshState();
   };
 
-  const handleApproveProposed = (_id: string) => {
-    alert(`آزمون با موفقیت تایید شد و در صف یکپارچه‌سازی با نرم‌افزار قرار گرفت.`);
-  };
+
 
   // If viewing a completed Result
   if (activeResult) {
@@ -225,24 +230,12 @@ function App() {
             onClick={() => setActiveTab('couples')}
             className={`flex-1 min-w-[90px] flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
               activeTab === 'couples'
-                ? 'bg-white dark:bg-slate-700 shadow-xs text-rose-600 dark:text-rose-400'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
-            }`}
-          >
-            <Heart size={15} />
-            <span>تطبیق زوجین</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab('proposed')}
-            className={`flex-1 min-w-[90px] flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
-              activeTab === 'proposed'
                 ? 'bg-white dark:bg-slate-700 shadow-xs text-indigo-600 dark:text-indigo-400'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
-            <Beaker size={15} />
-            <span>پیشنهادی</span>
+            <ArrowRightLeft size={15} />
+            <span>مقایسه دو نفر</span>
           </button>
         </div>
 
@@ -303,26 +296,18 @@ function App() {
         {/* Tab 2: Clients & Longitudinal Progress */}
         {activeTab === 'clients' && <ClientsView onViewResult={(r) => setActiveResult(r)} />}
 
-        {/* Tab 3: Couples Matching Engine */}
-        {activeTab === 'couples' && <CouplesMatchView />}
-
-        {/* Tab 4: Proposed Tests View */}
-        {activeTab === 'proposed' && (
-          <div>
-            <div className="mb-6">
-              <h2 className="text-xl font-bold text-slate-800 dark:text-white">آزمون‌های پیشنهادی جهت تایید</h2>
-              <p className="text-slate-500 dark:text-slate-400 text-xs mt-0.5">
-                لیست آزمون‌های معتبر بر اساس استانداردهای روان‌سنجی ایران
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {proposedTests.map((test) => (
-                <ProposedTestCard key={test.id} test={test} onApprove={handleApproveProposed} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Tab 3: Two Persons Comparison Engine */}
+        {activeTab === 'couples' && <TwoPersonsMatchView />}
       </main>
+
+      {/* Profile Selection Modal */}
+      {profileModalTest && (
+        <ProfileSelectModal
+          test={profileModalTest}
+          onSelectProfile={handleProfileChosen}
+          onClose={() => setProfileModalTest(null)}
+        />
+      )}
 
       {/* Resume Draft Modal */}
       {showDraftModal && (

@@ -107,24 +107,32 @@ export interface ClientProfile {
   createdAt: string;
 }
 
-export interface CouplesComparisonResult {
-  partnerAName: string;
-  partnerBName: string;
+export interface ChallengeItem {
+  title: string;
+  explanation: string;
+  practicalTip: string;
+}
+
+export interface TwoPersonsComparisonResult {
+  personAName: string;
+  personBName: string;
   testTitle: string;
   overallCompatibility: number;
   compatibilityLevel: 'high' | 'moderate' | 'challenging';
   compatibilitySummary: string;
   synergyPoints: string[];
-  conflictAreas: string[];
+  challengeAreas: ChallengeItem[];
   counselorAdvice: string[];
   dimensionMatches: {
     dimension: string;
-    partnerAScore: string | number;
-    partnerBScore: string | number;
+    personAScore: string | number;
+    personBScore: string | number;
     harmonyScore: number;
     analysis: string;
   }[];
 }
+
+export type CouplesComparisonResult = TwoPersonsComparisonResult;
 
 export interface JobMatch {
   title: string;
@@ -149,7 +157,7 @@ export interface TestDefinition {
   description: string;
   clinicalApplication: string;
   questions: Question[];
-  optionType: 'likert7' | 'likert5' | 'likert6' | 'yesno' | 'custom';
+  optionType: 'likert7' | 'likert5' | 'likert6' | 'likert4' | 'yesno' | 'custom';
   defaultOptions?: { label: string; value: number }[];
 }
 

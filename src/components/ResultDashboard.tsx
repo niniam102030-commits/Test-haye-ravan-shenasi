@@ -49,6 +49,28 @@ export const ResultDashboard: React.FC<ResultDashboardProps> = ({ result, onBack
 
   const flaggedQuestions = result.detailedAnswers?.filter((a) => a.isFlagged) || [];
 
+  const [shareSuccess, setShareSuccess] = useState(false);
+
+  const handleShareDirectly = async () => {
+    const text = generateFullCounselorTextReport(result);
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `پاسخ‌نامه آزمون ${result.testTitle} - ${result.clientName}`,
+          text: text,
+        });
+        setShareSuccess(true);
+        setTimeout(() => setShareSuccess(false), 3000);
+        return;
+      } catch (e) {
+        // Fallback to clipboard
+      }
+    }
+    navigator.clipboard.writeText(text);
+    setCopiedType('full');
+    setTimeout(() => setCopiedType(null), 2500);
+  };
+
   const handleCopyFullReport = () => {
     const text = generateFullCounselorTextReport(result);
     navigator.clipboard.writeText(text);
@@ -74,7 +96,7 @@ export const ResultDashboard: React.FC<ResultDashboardProps> = ({ result, onBack
     const text = generateFullCounselorTextReport(result);
     const safeTitle = result.testId.toUpperCase();
     const safeDate = result.date.replace(/[\/\s:]/g, '-');
-    downloadTextFile(`گزارش_${safeTitle}_${safeDate}.txt`, text);
+    downloadTextFile(`پاسخنامه_${safeTitle}_${safeDate}.txt`, text);
   };
 
   return (
@@ -124,45 +146,53 @@ export const ResultDashboard: React.FC<ResultDashboardProps> = ({ result, onBack
         </div>
       </div>
 
-      {/* Counselor Sharing Hub (Dedicated Card) */}
-      <div className="bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 rounded-3xl p-6 text-white shadow-xl mb-8 relative overflow-hidden">
+      {/* Sharing & Full Q&A Export Hub */}
+      <div className="bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 rounded-3xl p-6 text-white shadow-xl mb-8 relative overflow-hidden text-right">
         <div className="flex items-start justify-between mb-4">
           <div>
             <div className="flex items-center gap-2 text-indigo-300 text-xs font-bold uppercase tracking-wider mb-1">
               <Share2 size={16} />
-              <span>اشتراک‌گذاری جامع با مشاور و درمانگر</span>
+              <span>ارسال و اشتراک‌گذاری کامل سوالات و پاسخ‌ها</span>
             </div>
-            <h2 className="text-lg font-bold">خروجی کامل آزمون (همراه با متن تمام سوالات و پاسخ‌ها)</h2>
+            <h2 className="text-lg font-bold text-white">ارسال پاسخ‌نامه به مشاور، دیگران یا پیام‌رسان‌ها</h2>
           </div>
         </div>
 
         <p className="text-xs text-indigo-200 leading-relaxed mb-6">
-          می‌توانید گزارش کاملی شامل نتایج، درصدها و تک‌تک سوالات به همراه گزینه‌ای که مراجع انتخاب کرده را در قالب یک فایل ذخیره کنید یا در پیام‌رسان‌ها کپی و برای روانشناس ارسال نمایید.
+          می‌توانید تمامی سوالات این آزمون را به همراه پاسخ مشخصی که به هر سوال داده‌اید و تحلیل نتیجه، مستقیماً به پیام‌رسان‌ها (واتساپ، تلگرام، ایتا، بله) ارسال کنید، در قالب فایل متنی ذخیره نمایید یا در حافظه کپی کنید.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+          <button
+            onClick={handleShareDirectly}
+            className="flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-bold text-xs transition-all shadow-md shadow-emerald-700/20"
+          >
+            <Share2 size={15} />
+            <span>{shareSuccess ? 'ارسال شد!' : 'ارسال به پیام‌رسان‌ها'}</span>
+          </button>
+
           <button
             onClick={handleCopyFullReport}
-            className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-bold text-xs transition-all shadow-md"
+            className="flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-bold text-xs transition-all shadow-md"
           >
-            {copiedType === 'full' ? <Check size={16} className="text-emerald-300" /> : <Copy size={16} />}
-            <span>{copiedType === 'full' ? 'گزارش کپی شد!' : 'کپی متن کامل برای مشاور'}</span>
+            {copiedType === 'full' ? <Check size={15} className="text-emerald-300" /> : <Copy size={15} />}
+            <span>{copiedType === 'full' ? 'تمام سوالات کپی شد!' : 'کپی متن تمام سوالات و پاسخ‌ها'}</span>
           </button>
 
           <button
             onClick={handleDownloadFile}
-            className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 text-white font-bold text-xs transition-all border border-white/20"
+            className="flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 text-white font-bold text-xs transition-all border border-white/20"
           >
-            <Download size={16} />
+            <Download size={15} />
             <span>دانلود فایل متنی (.txt)</span>
           </button>
 
           <button
             onClick={handleCopySummaryOnly}
-            className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:scale-95 text-indigo-200 font-bold text-xs transition-all border border-white/10"
+            className="flex items-center justify-center gap-2 py-3 px-3.5 rounded-xl bg-white/5 hover:bg-white/10 active:scale-95 text-indigo-200 font-bold text-xs transition-all border border-white/10"
           >
-            {copiedType === 'summary' ? <Check size={16} className="text-emerald-300" /> : <Copy size={16} />}
-            <span>{copiedType === 'summary' ? 'کپی شد!' : 'کپی خلاصه آماری'}</span>
+            {copiedType === 'summary' ? <Check size={15} className="text-emerald-300" /> : <Copy size={15} />}
+            <span>{copiedType === 'summary' ? 'خلاصه کپی شد!' : 'کپی خلاصه آماری'}</span>
           </button>
         </div>
       </div>

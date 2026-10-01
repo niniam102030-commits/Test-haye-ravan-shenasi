@@ -98,7 +98,10 @@ export const processTestResults = (
 ): TestResult => {
   const isLikert7 = test.optionType === 'likert7'; // MBTI (-3 to +3)
   const isLikert6 = test.optionType === 'likert6'; // Young (1 to 6)
-  const isLikert5 = test.optionType === 'likert5'; // Holland (1 to 5)
+  const isLikert5 = test.optionType === 'likert5'; // Holland / Gardner / Enrich (1 to 5) or NEO (0 to 4)
+  const isLikert4 = test.optionType === 'likert4'; // DASS (0 to 3)
+  const isCattell = test.id === 'cattell'; // Cattell (0, 1, 2)
+  const isNeo = test.id === 'neo'; // NEO (0 to 4)
 
   // Accumulate scores per factor
   const factorMap: Record<string, { name: string; rawSum: number; count: number }> = {};
@@ -117,8 +120,11 @@ export const processTestResults = (
 
     if (q.isReversed) {
       if (isLikert6) val = 7 - val;
+      else if (isNeo) val = 4 - val;
       else if (isLikert5) val = 6 - val;
       else if (isLikert7) val = -val;
+      else if (isLikert4) val = 3 - val;
+      else if (isCattell) val = 2 - val;
     }
 
     factorMap[q.factor].rawSum += val;
@@ -131,28 +137,35 @@ export const processTestResults = (
     let maxScore = item.count;
 
     if (isLikert7) {
-      // Scale from -3*count to +3*count -> mapped to 0%..100%
       const maxPossible = item.count * 3;
       maxScore = maxPossible;
       percentage = maxPossible > 0 ? Math.round(((item.rawSum + maxPossible) / (2 * maxPossible)) * 100) : 50;
     } else if (isLikert6) {
-      // Scale from 1*count to 6*count
       maxScore = item.count * 6;
       const minPossible = item.count * 1;
       percentage = Math.round(((item.rawSum - minPossible) / (maxScore - minPossible)) * 100);
+    } else if (isNeo) {
+      maxScore = item.count * 4;
+      percentage = maxScore > 0 ? Math.round((item.rawSum / maxScore) * 100) : 50;
     } else if (isLikert5) {
-      // Scale from 1*count to 5*count
       maxScore = item.count * 5;
       const minPossible = item.count * 1;
       percentage = Math.round(((item.rawSum - minPossible) / (maxScore - minPossible)) * 100);
+    } else if (isLikert4) {
+      maxScore = item.count * 3;
+      percentage = maxScore > 0 ? Math.round((item.rawSum / maxScore) * 100) : 0;
+    } else if (isCattell) {
+      // Cattell raw score (0 to count*2), mapped to percentage and Sten score (1-10)
+      maxScore = item.count * 2;
+      percentage = maxScore > 0 ? Math.round((item.rawSum / maxScore) * 100) : 50;
     }
 
     percentage = Math.max(0, Math.min(100, percentage));
     const level = calculateFactorLevel(percentage);
 
-    let counselorNote = 'در محدوده نرمال.';
+    let counselorNote = 'در محدوده نرمال و متوازن.';
     if (test.id === 'young_schema') {
-      const avg = item.count > 0 ? (item.rawSum / item.count) : 0;
+      const avg = item.count > 0 ? item.rawSum / item.count : 0;
       if (avg >= 4.5) {
         counselorNote = 'طرحواره کاملاً فعال و ریشه‌دار (نیازمند توجه ویژه در طرحواره‌درمانی).';
       } else if (avg >= 3.5) {
@@ -160,21 +173,61 @@ export const processTestResults = (
       } else {
         counselorNote = 'طرحواره خاموش یا انطباقی.';
       }
+    } else if (test.id === 'dass') {
+      const score = item.rawSum;
+      if (key === 'depression') {
+        if (score <= 4) counselorNote = 'نرمال (خلق طبیعی، بدون نشانه بالینی افسردگی)';
+        else if (score <= 6) counselorNote = 'افسردگی خفیف (افت اندک انرژی و خلق)';
+        else if (score <= 10) counselorNote = 'افسردگی متوسط (نیازمند بررسی بالینی و فعال‌سازی رفتاری)';
+        else if (score <= 13) counselorNote = 'افسردگی شدید (نشانه‌های بالینی پررنگ، نیازمند مداخله روان‌درمانی)';
+        else counselorNote = 'افسردگی بسیار شدید (اولویت فوری در ارزیابی تخصصی بالینی)';
+      } else if (key === 'anxiety') {
+        if (score <= 3) counselorNote = 'نرمال (پاسخ‌های اضطرابی در محدوده طبیعی)';
+        else if (score <= 5) counselorNote = 'اضطراب خفیف (تنش‌های بدنی گهگاهی)';
+        else if (score <= 7) counselorNote = 'اضطراب متوسط (برانگیختگی خودمختار قابل توجه)';
+        else if (score <= 9) counselorNote = 'اضطراب شدید (علائم فیزیولوژیک بارز، نیازمند تکنیک‌های آرام‌سازی)';
+        else counselorNote = 'اضطراب بسیار شدید (حملات اضطرابی یا پانیک احتمالی، نیازمند مداخله بالینی)';
+      } else if (key === 'stress') {
+        if (score <= 7) counselorNote = 'نرمال (تحمل فشار و استرس در محدوده طبیعی)';
+        else if (score <= 9) counselorNote = 'استرس خفیف (تحریک‌پذیری ملایم)';
+        else if (score <= 12) counselorNote = 'استرس متوسط (تنش مداوم، نیاز به مدیریت زمان و استرس)';
+        else if (score <= 16) counselorNote = 'استرس شدید (احتمال فرسودگی روانی و کاهش تاب‌آوری)';
+        else counselorNote = 'استرس بسیار شدید (تنش بسیار بالا و خطر فرسودگی کامل روانی)';
+      }
+    } else if (isCattell) {
+      const sten = Math.round(1 + (percentage / 100) * 9);
+      if (sten >= 8) {
+        counselorNote = `نمره استان بالا (${sten}): گرایش پررنگ به قطب مثبت عامل.`;
+      } else if (sten <= 3) {
+        counselorNote = `نمره استان پایین (${sten}): گرایش به قطب منفی عامل.`;
+      } else {
+        counselorNote = `نمره استان متوسط (${sten}): تعادل میان دو قطب عامل.`;
+      }
+    } else if (test.id === 'neo') {
+      if (percentage >= 70) {
+        counselorNote = 'سطح نمره بالا در هنجار آزمون؛ یکی از ارکان بارز در سازمان شخصیتی.';
+      } else if (percentage <= 30) {
+        counselorNote = 'سطح نمره پایین در هنجار آزمون؛ گرایش به سمت قطب متضاد عامل.';
+      } else {
+        counselorNote = 'در دامنه هنجار و متوسط جمعیت عمومی.';
+      }
     } else if (percentage >= 75) {
       counselorNote = 'گرایش بسیار بالا؛ شاخص بارز در پروفایل مراجع.';
     } else if (percentage <= 25) {
       counselorNote = 'گرایش بسیار پایین در این مقیاس.';
     }
 
+    const sten = isCattell ? Math.min(10, Math.max(1, Math.round(1 + (percentage / 100) * 9))) : 0;
+
     return {
       key,
       name: item.name,
-      score: item.rawSum,
-      maxScore,
+      score: isCattell ? sten : item.rawSum,
+      maxScore: isCattell ? 10 : maxScore,
       percentage,
       level,
-      levelText: getLevelText(level),
-      description: `شاخص ${item.name} (${percentage}٪)`,
+      levelText: isCattell ? `استن ${sten}` : getLevelText(level),
+      description: isCattell ? `نمره استن استاندارد (Sten): ${sten} از ۱۰` : `شاخص ${item.name} (${percentage}٪)`,
       counselorNote,
     };
   });
@@ -230,6 +283,77 @@ export const processTestResults = (
     primarySummary = activeSchemas.length > 0
       ? `در این ارزیابی، تعداد ${activeSchemas.length} طرحواره به عنوان الگوهای پررنگ‌تر شناسایی شدند (از جمله: ${activeSchemas.slice(0, 3).map((s) => s.name).join('، ')}). توجه داشته باشید این موارد صرفاً گرایش‌های ادراکی هستند و بررسی ریشه‌ای آن‌ها در بستر مشاوره و روان‌درمانی فردی توصیه می‌شود.`
       : 'نمرات در اکثر حوزه‌های طرحواره‌ای در بازه کنترل‌شده و متناسب با هنجار جامعه قرار دارند.';
+
+  } else if (test.id === 'dass') {
+    const depF = factors.find((f) => f.key === 'depression');
+    const anxF = factors.find((f) => f.key === 'anxiety');
+    const strF = factors.find((f) => f.key === 'stress');
+
+    const depScore = depF ? depF.score : 0;
+    const anxScore = anxF ? anxF.score : 0;
+    const strScore = strF ? strF.score : 0;
+
+    const getDepLabel = (s: number) => (s <= 4 ? 'نرمال' : s <= 6 ? 'خفیف' : s <= 10 ? 'متوسط' : s <= 13 ? 'شدید' : 'بسیار شدید');
+    const getAnxLabel = (s: number) => (s <= 3 ? 'نرمال' : s <= 5 ? 'خفیف' : s <= 7 ? 'متوسط' : s <= 9 ? 'شدید' : 'بسیار شدید');
+    const getStrLabel = (s: number) => (s <= 7 ? 'نرمال' : s <= 9 ? 'خفیف' : s <= 12 ? 'متوسط' : s <= 16 ? 'شدید' : 'بسیار شدید');
+
+    primaryCode = `افسردگی: ${getDepLabel(depScore)} | اضطراب: ${getAnxLabel(anxScore)} | استرس: ${getStrLabel(strScore)}`;
+    primaryTitle = 'پروفایل بالینی مقیاس DASS-21';
+    primarySubtitle = 'شدت علائم عاطفی منفی بر اساس مقیاس استاندارد لوویبوند';
+    primarySummary = `نتایج غربالگری نشان می‌دهد: نمره افسردگی شما برابر با ${depScore} (${getDepLabel(depScore)})، نمره اضطراب برابر با ${anxScore} (${getAnxLabel(anxScore)}) و نمره استرس برابر با ${strScore} (${getStrLabel(strScore)}) است. این مقیاس ابزار غربالگری است و برای تشخیص قطعی یا درمان نیاز به مصاحبه تخصصی با روانشناس می‌باشد.`;
+
+  } else if (test.id === 'neo') {
+    const sorted = [...factors].sort((a, b) => b.percentage - a.percentage);
+    const highest = sorted[0];
+    const lowest = sorted[sorted.length - 1];
+
+    primaryCode = `ابعاد برجسته: ${highest?.name.split(' ')[0] || ''} و ${sorted[1]?.name.split(' ')[0] || ''}`;
+    primaryTitle = 'پروفایل پنج عامل بزرگ شخصیت (NEO-FFI)';
+    primarySubtitle = 'سازماندهی ابعاد بنیادین روان‌شناختی پنج‌گانه';
+    primarySummary = `بر اساس الگوی پاسخ‌های شما در پرسشنامه ۶۰ سوالی نئو، بارزترین ویژگی شخصیتی شما «${highest?.name || ''}» با ${highest?.percentage || 0}٪ و متعادل‌ترین/پایین‌ترین شاخص «${lowest?.name || ''}» با ${lowest?.percentage || 0}٪ ارزیابی شده است. این ساختار نشان‌دهنده سبک انطباق رفتاری و ارتباطی شما در محیط کار و زندگی فردی است.`;
+
+  } else if (test.id === 'gardner') {
+    const sorted = [...factors].sort((a, b) => b.score - a.score);
+    const top3 = sorted.slice(0, 3);
+
+    primaryCode = top3.map((t) => t.name.split(' ')[0]).join(' + ');
+    primaryTitle = 'سه استعداد برتر در هوش‌های چندگانه';
+    primarySubtitle = `هوش غالب: ${top3[0]?.name || ''}`;
+    primarySummary = `بر اساس نظریه هاوارد گاردنر، برجسته‌ترین هوش‌های شما به ترتیب شامل «${top3[0]?.name || ''}» (${top3[0]?.percentage || 0}٪)، «${top3[1]?.name || ''}» (${top3[1]?.percentage || 0}٪) و «${top3[2]?.name || ''}» (${top3[2]?.percentage || 0}٪) است. هدایت تحصیلی و شغلی متناسب با این سه استعداد حداکثر شکوفایی فردی را به همراه خواهد داشت.`;
+
+  } else if (test.id === 'enrich') {
+    const avgScore = Math.round(factors.reduce((sum, f) => sum + f.percentage, 0) / (factors.length || 1));
+    const strengths = factors.filter((f) => f.percentage >= 65);
+    const growthAreas = factors.filter((f) => f.percentage < 45);
+
+    primaryCode = `شاخص رضایت کلی: ${avgScore}٪`;
+    primaryTitle = avgScore >= 70 ? 'کیفیت رابطه پویا، سازنده و رضایت‌بخش' : avgScore >= 50 ? 'رابطه با ثبات متوسط و نیازمند تقویت گفتگو' : 'رابطه با چالش‌های ساختاری و نیازمند بررسی تخصصی';
+    primarySubtitle = `دارای ${strengths.length} حوزه قوت و ${growthAreas.length} زمینه نیازمند رسیدگی`;
+    primarySummary = `میانگین شاخص سازگاری و کیفیت رابطه در ۷ بعد ارزیابی‌شده برابر با ${avgScore}٪ است. حوزه‌های قوت و هم‌افزایی شامل (${strengths.map((s) => s.name.split(' ')[0]).join('، ') || 'تعادل نسبی'}) و حوزه‌های نیازمند گفتگو و تمرین مهارت‌های ارتباطی شامل (${growthAreas.map((g) => g.name.split(' ')[0]).join('، ') || 'بدون تعارض بحرانی'}) ارزیابی شده‌اند.`;
+
+  } else if (test.id === 'cattell') {
+    // Calculate Cattell Second-Order Factors:
+    // Helper to get sten score 1-10 for factor
+    const getSten = (k: string) => {
+      const f = factors.find((x) => x.key === k);
+      return f ? Math.round(1 + (f.percentage / 100) * 9) : 5;
+    };
+
+    // 1. اضطراب (Anxiety): C-, L+, O+, Q4+
+    const anxietyScore = Math.round(((11 - getSten('C')) + getSten('L') + getSten('O') + getSten('Q4')) / 4);
+    // 2. برون‌گرایی (Extraversion): A+, F+, H+, Q2-
+    const extraversionScore = Math.round((getSten('A') + getSten('F') + getSten('H') + (11 - getSten('Q2'))) / 4);
+    // 3. استقلال (Independence): E+, H+, L+, Q1+
+    const independenceScore = Math.round((getSten('E') + getSten('H') + getSten('L') + getSten('Q1')) / 4);
+    // 4. سرسختی ذهنی (Tough-Mindedness): I-, M-, A-, Q1-
+    const toughMindednessScore = Math.round(((11 - getSten('I')) + (11 - getSten('M')) + (11 - getSten('A')) + (11 - getSten('Q1'))) / 4);
+    // 5. خودکنترلی و انضباط (Self-Control): G+, Q3+
+    const selfControlScore = Math.round((getSten('G') + getSten('Q3')) / 2);
+
+    primaryCode = `اضطراب: ${anxietyScore}/۱۰ | برون‌گرایی: ${extraversionScore}/۱۰`;
+    primaryTitle = 'پروفایل بالینی ۱۶ عاملی کتل (16PF)';
+    primarySubtitle = 'نتایج ۱۶ فاکتور اولیه + ۵ عامل مرتبه دوم کلان';
+    primarySummary = `عوامل درجه دوم استخراج‌شده: سطح اضطراب کلی (${anxietyScore} از ۱۰)، برون‌گرایی (${extraversionScore} از ۱۰)، استقلال و جسارت (${independenceScore} از ۱۰)، سرسختی ذهنی (${toughMindednessScore} از ۱۰) و انضباط شخصی (${selfControlScore} از ۱۰). این ترکیب تصویر دقیقی از سازمان شخصیتی مراجع را نشان می‌دهد.`;
   }
 
   return {
