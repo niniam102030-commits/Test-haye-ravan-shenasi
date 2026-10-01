@@ -16,14 +16,14 @@ jobs:
       - name: 📥 دریافت کدهای ریپازیتوری (Checkout Code)
         uses: actions/checkout@v4
 
-      - name: ☕ راه‌اندازی جاوا ۱۷ (Set up JDK 17)
+      - name: ☕ راه‌اندازی جاوا ۲۱ (Set up JDK 21 LTS)
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '21'
           cache: 'gradle'
 
-      - name: ⚡ راه‌اندازی نود جی‌اس (Set up Node.js)
+      - name: ⚡ راه‌اندازی نود جی‌اس ۲۲ (Set up Node.js 22 LTS)
         uses: actions/setup-node@v4
         with:
           node-version: 22
