@@ -331,6 +331,38 @@ export const processTestResults = (
     primarySubtitle = `دارای ${strengths.length} حوزه قوت و ${growthAreas.length} زمینه نیازمند رسیدگی`;
     primarySummary = `میانگین شاخص سازگاری و کیفیت رابطه در ۷ بعد ارزیابی‌شده برابر با ${avgScore}٪ است. حوزه‌های قوت و هم‌افزایی شامل (${strengths.map((s) => s.name.split(' ')[0]).join('، ') || 'تعادل نسبی'}) و حوزه‌های نیازمند گفتگو و تمرین مهارت‌های ارتباطی شامل (${growthAreas.map((g) => g.name.split(' ')[0]).join('، ') || 'بدون تعارض بحرانی'}) ارزیابی شده‌اند.`;
 
+  } else if (test.id === 'attachment') {
+    const anx = factors.find(f => f.key === 'anxiety' || f.key === 'Anxiety' || f.key === 'Anxious')?.percentage || 0;
+    const avo = factors.find(f => f.key === 'avoidance' || f.key === 'Avoidance' || f.key === 'Avoidant')?.percentage || 0;
+    let style = 'ایمن';
+    if (anx > 50 && avo > 50) style = 'اضطرابی-اجتنابی (ترسان)';
+    else if (anx > 50) style = 'اضطرابی-مشغول';
+    else if (avo > 50) style = 'اجتنابی-طردکننده';
+    primaryCode = `سبک دلبستگی: ${style}`;
+    primaryTitle = 'آزمون تجربیات در روابط نزدیک (ECR)';
+    primarySubtitle = 'تحلیل دینامیک دلبستگی بر اساس مدل دونمودی';
+    primarySummary = `بر اساس پاسخ‌های شما، سبک دلبستگی غالب شما در روابط عاطفی و نزدیک به احتمال زیاد '${style}' است. نمره اضطراب شما ${anx}٪ و نمره اجتناب شما ${avo}٪ محاسبه شد.`;
+  } else if (test.id === 'eq') {
+    const avgScore = Math.round(factors.reduce((sum, f) => sum + f.percentage, 0) / (factors.length || 1));
+    primaryCode = `هوش هیجانی کل: ${avgScore}٪`;
+    primaryTitle = 'آزمون هوش هیجانی شرینگ';
+    primarySubtitle = 'سنجش توانمندی‌های ادراک و مدیریت هیجانات';
+    primarySummary = `نمره کلی هوش هیجانی (EQ) شما ${avgScore}٪ است. این نمره نشان‌دهنده توانایی شما در شناسایی، درک، و مدیریت احساسات خود و دیگران می‌باشد.`;
+  } else if (test.id === 'dark_triad') {
+    const mach = factors.find(f => f.key.toLowerCase().includes('mach'))?.percentage || 0;
+    const narc = factors.find(f => f.key.toLowerCase().includes('narc'))?.percentage || 0;
+    const psyc = factors.find(f => f.key.toLowerCase().includes('psyc'))?.percentage || 0;
+    primaryCode = `ماکیاولیسم: ${mach}٪ | نارسیسیسم: ${narc}٪ | سایکوپاتی: ${psyc}٪`;
+    primaryTitle = 'آزمون شخصیت تاریک (SD3)';
+    primarySubtitle = 'سنجش ابعاد پنهان و تاریک شخصیت';
+    primarySummary = `نتایج شما در سه‌گانه تاریک بدین شرح است: ویژگی‌های ماکیاولیستی (منفعت‌طلبی و دستکاری ذهن دیگران) ${mach}٪، نارسیسیسم (خودشیفتگی و نیاز به توجه) ${narc}٪، و سایکوپاتی (فقدان همدلی و تکانشگری) ${psyc}٪.`;
+  } else if (test.id === 'via') {
+    const sorted = [...factors].sort((a, b) => b.percentage - a.percentage);
+    const top3 = sorted.slice(0, 3).map(f => f.name).join('، ');
+    primaryCode = `نقاط قوت برتر: ${top3}`;
+    primaryTitle = 'آزمون نقاط قوت منش (VIA)';
+    primarySubtitle = 'شناسایی فضایل و توانمندی‌های مثبت شخصیتی';
+    primarySummary = `بررسی پاسخ‌های شما نشان می‌دهد که بارزترین نقاط قوت شخصیتی شما عبارتند از: ${top3}. این نقاط قوت هسته اصلی شخصیت مثبت و ارزش‌های بنیادین شما را شکل می‌دهند.`;
   } else if (test.id === 'cattell') {
     // Calculate Cattell Second-Order Factors:
     // Helper to get sten score 1-10 for factor

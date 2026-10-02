@@ -48,6 +48,25 @@ export const TestRunner: React.FC<TestRunnerProps> = ({
 
   const startTimeRef = useRef<number>(Date.now());
 
+  // Calculate initial remaining time in seconds
+  const totalTimeSpentSeconds = Object.values(initialTimes).reduce((a, b) => a + b, 0);
+  const initialRemainingSeconds = Math.max(0, (test.estimatedMinutes * 60) - totalTimeSpentSeconds);
+  const [remainingSeconds, setRemainingSeconds] = useState(initialRemainingSeconds);
+
+  // Timer effect
+  useEffect(() => {
+    const timerInterval = setInterval(() => {
+      setRemainingSeconds((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(timerInterval);
+  }, []);
+
+  const formatTime = (totalSeconds: number) => {
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
   const question = test.questions[currentIdx];
   const totalQuestions = test.questions.length;
   const answeredCount = Object.keys(answers).length;
@@ -133,6 +152,22 @@ export const TestRunner: React.FC<TestRunnerProps> = ({
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Countdown Timer */}
+          <div className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border ${
+            remainingSeconds < 60 
+              ? 'bg-rose-50 border-rose-200 text-rose-600 dark:bg-rose-950/40 dark:border-rose-900 dark:text-rose-400 animate-pulse' 
+              : 'bg-slate-50 border-slate-200 text-slate-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300'
+          } text-xs font-mono font-bold`} title="زمان باقیمانده">
+            <Clock size={14} className={remainingSeconds < 60 ? 'animate-bounce' : ''} />
+            <span>{formatTime(remainingSeconds)}</span>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border ${remainingSeconds < 60 ? 'bg-rose-50 border-rose-200 text-rose-600 dark:bg-rose-950/40 dark:border-rose-900 dark:text-rose-400 animate-pulse' : 'bg-slate-50 border-slate-200 text-slate-600 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300'} text-xs font-mono font-bold`} title="زمان باقیمانده">
+            <Clock size={14} className={remainingSeconds < 60 ? 'animate-bounce' : ''} />
+            <span>{formatTime(remainingSeconds)}</span>
+          </div>
+
           {/* Quick Jump Grid Button */}
           <button
             onClick={() => setShowGridModal(true)}

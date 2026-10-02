@@ -1,18 +1,18 @@
 import { TestDefinition } from '../types';
-
 export const mbtiDefinition: TestDefinition = {
   id: 'mbti',
   title: 'Myers-Briggs Type Indicator (MBTI)',
-  persianTitle: 'تست شخصیت مایرز-بریگز (۱۶ تیپ استاندارد)',
-  subtitle: 'بر پایه فرم ۶۰ سوالی و ۵ بعدی رسمی 16Personalities',
-  category: 'development',
+  persianTitle: 'تست مایرز-بریگز (MBTI)',
+  subtitle: 'استاندارد ۶۰ سوالی فرم بازبینی شده',
+  category: 'personality',
+  popularity: 100,
   questionCount: 60,
   estimatedMinutes: 12,
   iconName: 'Users',
   gradient: 'from-purple-500 to-indigo-600',
   accentColor: '#6366f1',
-  description: 'آزمون رسمی و کامل ۶۰ سوالی ارزیابی ۱۶ تیپ شخصیتی و ۵ بعد (شامل بعد هویت قاطع -A در برابر حساس -T) برگرفته از پایگاه مرجع 16Personalities.',
-  clinicalApplication: 'شناخت سبک ارتباطی، خودآگاهی، انطباق شغلی، حل تعارض و تحلیل واکنش به استرس.',
+  description: 'آزمون معتبر MBTI برای شناخت ترجیحات شخصیتی و شغلی.',
+  clinicalApplication: 'ارزیابی مسیر شغلی، پویایی تیمی و مشاوره فردی.',
   optionType: 'likert7',
   defaultOptions: [
     { label: 'کاملاً موافقم', value: 3 },
@@ -21,727 +21,727 @@ export const mbtiDefinition: TestDefinition = {
     { label: 'نظری ندارم', value: 0 },
     { label: 'کمی مخالفم', value: -1 },
     { label: 'مخالفم', value: -2 },
-    { label: 'کاملاً مخالفم', value: -3 },
+    { label: 'کاملاً مخالفم', value: -3 }
   ],
   questions: [
   {
-    "id": "mq_0",
-    "text": "شما مرتب دوستان جدیدی پیدا می‌کنید.",
+    "id": "mq_1",
+    "text": "در مهمانی‌ها معمولاً با افراد جدید زیادی صحبت می‌کنم.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_41",
-    "text": "از کاوش در ایده‌ها و نظرات ناآشنا لذت می‌برید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_27",
-    "text": "دلایل عاطفی به آسانی نظرتان را عوض نمی‌کنند.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_58",
-    "text": "شما در رعایت موعد‌های زمانی تعیین شده مشکل دارید.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_39",
-    "text": "شما به ندرت حس نامطمئن بودن می‌کنید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_40",
-    "text": "شما از برقراری تماس تلفنی اجتناب می‌کنید.",
-    "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_29",
-    "text": "شما از بحث در مورد مسائل غامض اخلاقی لذت می‌برید.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_17",
-    "text": "شما حساس بودن را به کاملاً صادق بودن ترجیح می‌دهید.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_3",
-    "text": "فضاهای زندگی و کاری شما تمیز و مرتب هستند.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_54",
-    "text": "شما اغلب احساس غرق شدن در امور را دارید.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_15",
-    "text": "شما از شرکت در فعالیت‌های تیمی لذت می‌برید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_16",
-    "text": "شما از تجربه کردن رویکردهای جدید و امتحان نشده لذت می‌برید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_12",
-    "text": "در هنگام تعیین اقدامات، حقایق را به احساسات افراد ترجیح می‌دهید.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_13",
-    "text": "اغلب بدون این که کلاً برنامه‌ای داشته باشید با جریان روز پیش می‌روید.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_14",
-    "text": "شما به ندرت در این باره نگران می‌شوید که آیا تاثیر ذهنی خوبی روی افرادی که با آنها ملاقات می‌کنید می‌گذارید یا خیر.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_10",
-    "text": "رفتن به سوی شخصی که به نظرتان جالب است و باز کردن سر صحبت با او برای تان راحت است.",
-    "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_11",
-    "text": "شما خیلی تمایلی به بحث‌های مربوط به برداشت‌های گوناگون از آثار خلاقانه ندارید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_7",
-    "text": "داستان‌ها و عواطف مردم از ارقام و داده‌ها برایتان مهم‌تر هستند.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_18",
-    "text": "شما فعالانه در جستجوی تجربیات و حوزه‌های دانش جدید برای کاوش در آنها هستید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_19",
-    "text": "شما مستعد نگرانی از این هستید که اوضاع بدتر خواهد شد.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_20",
-    "text": "شما از سرگرمی‌ها یا فعالیت‌های انفرادی بیشتر از موارد گروهی لذت می‌برید.",
-    "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_21",
-    "text": "نمی‌توانید تصور کنید که برای کسب درآمد زندگی داستان‌های تخیلی بنویسید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_22",
-    "text": "در تصمیم‌گیری، کارایی را ترجیح می‌دهید حتی اگر به معنی نادیده گرفتن برخی جنبه‌های عاطفی باشد.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_23",
-    "text": "شما ترجیح می‌دهید قبل از این که به خودتان اجازه استراحت بدهید اول کارهای خود را انجام دهید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_24",
-    "text": "در اختلاف‌ها، اثبات حرف خودتان اولویت بیشتری از محافظت از احساسات دیگران دارد.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_25",
-    "text": "در گردهمآیی‌های اجتماعی، معمولاً اول صبر می‌کنید دیگران خودشان را معرفی کنند.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_26",
-    "text": "خلق و خوی شما می‌تواند به سرعت تغییر کند.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
     }
   },
   {
     "id": "mq_2",
-    "text": "معمولاً بیشتر توسط آنچه که از نظر عاطفی برایتان قابل درک است متقاعد می‌شوید تا استدلال‌های مبتنی بر حقیقت.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_28",
-    "text": "شما اغلب کارها را در آخرین لحظه ممکن انجام می‌دهید.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_6",
-    "text": "شما وظایف را به طور موثر اولویت‌بندی و برنامه‌ریزی می‌کنید و اغلب آنها را قبل از موعد مقرر به پایان می‌رسانید.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_30",
-    "text": "شما معمولاً ترجیح می‌دهید کنار دیگران باشید تا تنها.",
+    "text": "اغلب ترجیح می‌دهم وقتم را در خانه و به تنهایی بگذرانم.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
     }
   },
   {
-    "id": "mq_31",
-    "text": "وقتی بحث به شدت تئوری می‌شود خسته می‌شوید یا علاقه خود را از دست می‌دهید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_32",
-    "text": "در هنگام تضاد حقایق و احساسات، معمولاً حرف دل خود را گوش می‌کنید.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_33",
-    "text": "حفظ ثبات در دنبال کردن یک برنامه کاری یا مطالعاتی برای شما چالش برانگیز است.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_34",
-    "text": "شما به ندرت انتخاب‌های خود را زیر سوال می‌برید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_35",
-    "text": "دوستان تان شما را سرزنده و برونگرا توصیف می‌کنند.",
+    "id": "mq_3",
+    "text": "بودن در جمع‌های شلوغ به من انرژی زیادی می‌دهد.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_36",
-    "text": "شما به اشکال مختلف بیان خلاقانه مثل نوشتن جذب می‌شوید.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_37",
-    "text": "شما معمولاً انتخاب‌های خود را بر مبنای حقایق عینی استوار می‌کنید تا تاثیرات عاطفی.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_38",
-    "text": "شما دوست دارید یک فهرست از کارهای هر روز داشته باشید.",
-    "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
     }
   },
   {
     "id": "mq_4",
-    "text": "شما اغلب آرام هستید حتی تحت فشار خیلی زیاد.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
+    "text": "ترجیح می‌دهم دایره دوستانم کوچک اما بسیار صمیمی باشد.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
     }
   },
   {
     "id": "mq_5",
-    "text": "به نظر شما فکر شبکه بندی یا تبلیغ کردن خودتان برای غریبه‌ها بسیار ترسناک است.",
+    "text": "معمولاً در مکالمات پیش‌قدم می‌شوم و سر صحبت را باز می‌کنم.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
     }
   },
   {
-    "id": "mq_1",
-    "text": "ایده‌های پیچیده و نو بیشتر از ایده‌های ساده و آسان شما را هیجان‌زده می‌کنند.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_42",
-    "text": "به آسانی می‌توانید با افرادی که تازه ملاقات کرده‌اید ارتباط برقرار کنید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_43",
-    "text": "اگر برنامه‌هایتان بهم بخورند، اولویت اول شما برگشتن به مسیر در سریعترین زمان ممکن است.",
-    "factor": "J_P",
-    "factorTitle": "سبک زندگی و سازماندهی (J / P)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "سبک زندگی و سازماندهی (J / P)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص سبک زندگی و سازماندهی (J / P) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_44",
-    "text": "اشتباهاتی که در گذشته‌های دور مرتکب شده‌اید هنوز شما را آزار می‌دهند.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_45",
-    "text": "شما خیلی تمایل به بحث در مورد این نظریه‌ها ندارید که جهان در آینده چه شکلی خواهد بود.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_46",
-    "text": "احساسات شما بیشتر از اینکه آنها را کنترل کنید، شما را کنترل می‌کنند.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_47",
-    "text": "در هنگام تصمیم‌گیری بیشتر بر احساس افرادی که تحت تأثیر قرار می‌گیرند تمرکز می‌کنید تا آنچه که منطقی‌تر یا کاراتر است.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_48",
-    "text": "سبک کاری فردی شما بیشتر به انفجارهای خودبخودی انرژی نزدیک است تا تلاش‌های سازماندهی شده و مداوم.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_49",
-    "text": "وقتی کسی ارزش زیادی برای شما قائل است با خود فکر می‌کنید چقدر طول خواهد کشید که از شما ناامید شود.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_50",
-    "text": "شما شغلی را دوست دارید که بیشتر اوقات نیاز باشد به تنهایی کار کنید.",
+    "id": "mq_6",
+    "text": "بعد از حضور در رویدادهای اجتماعی نیاز به استراحت و تنهایی دارم.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
-    "isReversed": false,
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
     }
   },
   {
-    "id": "mq_51",
-    "text": "شما باور دارید که فکر کردن به پرسش‌های فلسفی انتزاعی اتلاف وقت است.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_52",
-    "text": "حس می‌کنید بیشتر به سمت فضاهای شلوغ و پر جنب و جوش کشیده می‌شوید تا مکان‌های ساکت و صمیمی.",
+    "id": "mq_7",
+    "text": "فکر کردن با صدای بلند و تبادل نظر با دیگران برایم راحت‌تر است.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_53",
-    "text": "اگر حس می‌کنید گرفتن تصمیمی درست است، اغلب بدون نیاز به اثبات بیشتر آن را عملی می‌کنید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_9",
-    "text": "حتی یک اشتباه کوچک می‌تواند باعث شود به توانایی‌های کلی و دانش خود شک کنید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_55",
-    "text": "شما کارها به صورت روشمند و بدون رد شدن از کنار هیچ مرحله‌ای انجام می‌دهید.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_56",
-    "text": "شما وظایفی را ترجیح می‌دهید که برای انجام شان باید راه‌حل‌های خلاقانه پیدا کنید تا دنبال کردن مراحل مشخص.",
-    "factor": "N_S",
-    "factorTitle": "جمع‌آوری اطلاعات و پردازش (N / S)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "جمع‌آوری اطلاعات و پردازش (N / S)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص جمع‌آوری اطلاعات و پردازش (N / S) در مدل ۵ بعدی شخصیت."
-    }
-  },
-  {
-    "id": "mq_57",
-    "text": "در هنگام انتخاب کردن، بیشتر این احتمال وجود دارد که به شهود عاطفی اتکا کنید تا استدلال منطقی.",
-    "factor": "F_T",
-    "factorTitle": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-    "isReversed": false,
-    "counselorInsight": {
-      "targetTrait": "تصمیم‌گیری و قضاوت ارزشی (F / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص تصمیم‌گیری و قضاوت ارزشی (F / T) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
     }
   },
   {
     "id": "mq_8",
-    "text": "شما دوست دارید از ابزارهای سازماندهی مثل برنامه‌های زمانی و لیست‌ها استفاده کنید.",
+    "text": "قبل از اینکه حرفی بزنم یا عملی انجام دهم، دوست دارم خوب در موردش فکر کنم.",
     "factor": "E_I",
-    "factorTitle": "انرژی و تعامل اجتماعی (E / I)",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
+    }
+  },
+  {
+    "id": "mq_9",
+    "text": "به راحتی می‌توانم با غریبه‌ها ارتباط برقرار کنم.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "انرژی و تعامل اجتماعی (E / I)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص انرژی و تعامل اجتماعی (E / I) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_10",
+    "text": "ترجیح می‌دهم بیشتر شنونده باشم تا گوینده.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
+    }
+  },
+  {
+    "id": "mq_11",
+    "text": "کار کردن در محیط‌های شلوغ و پرتحرک را دوست دارم.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_12",
+    "text": "سکوت و تمرکز انفرادی برایم اهمیت زیادی دارد.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
+    }
+  },
+  {
+    "id": "mq_13",
+    "text": "معمولاً احساساتم را به سرعت و صراحتاً بروز می‌دهم.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_14",
+    "text": "آشنا شدن با افراد جدید گاهی برایم خسته‌کننده است.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "درون‌گرایی (I)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (درون‌گرایی (I)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به درون‌گرایی (I) است."
+    }
+  },
+  {
+    "id": "mq_15",
+    "text": "از بودن در کانون توجه دیگران لذت می‌برم.",
+    "factor": "E_I",
+    "factorTitle": "درون‌گرایی / برون‌گرایی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "برون‌گرایی (E)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (برون‌گرایی (E)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به برون‌گرایی (E) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_16",
+    "text": "به مفاهیم انتزاعی و تئوری‌های علمی علاقه زیادی دارم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_17",
+    "text": "تمرکزم بیشتر روی واقعیت‌های موجود و جزئیات ملموس است.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_18",
+    "text": "اغلب در مورد احتمالات آینده و سناریوهای مختلف رویاپردازی می‌کنم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_19",
+    "text": "تجربه‌های عملی و گذشته برایم راهنمای بهتری هستند تا ایده‌های اثبات‌نشده.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_20",
+    "text": "دوست دارم پشت‌پرده اتفاقات و معانی پنهان مسائل را کشف کنم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_21",
+    "text": "به کارها و روش‌هایی که قبلاً امتحان شده‌اند و جواب داده‌اند پایبندم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_22",
+    "text": "اغلب به ایده‌های جدید فکر می‌کنم تا راه‌حل‌های سنتی.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_23",
+    "text": "دقت بالایی در مشاهده جزئیات محیط پیرامونم دارم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_24",
+    "text": "نوآوری و تغییر را به حفظ وضع موجود ترجیح می‌دهم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_25",
+    "text": "درک مسائل عینی و مشخص برایم راحت‌تر از مسائل فلسفی است.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_26",
+    "text": "علاقه زیادی به بحث درباره نمادها و استعاره‌ها دارم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_27",
+    "text": "ترجیح می‌دهم دستورالعمل‌های شفاف و گام‌به‌گام داشته باشم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_28",
+    "text": "اغلب به سرعت الگوها و ارتباط بین مفاهیم را تشخیص می‌دهم.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_29",
+    "text": "دوست دارم کارها کاربرد فوری و نتیجه عملی داشته باشند.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "حسی (S)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (حسی (S)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به حسی (S) است."
+    }
+  },
+  {
+    "id": "mq_30",
+    "text": "نگاهم بیشتر به تصویر بزرگ (Big Picture) است تا جزئیات ریز.",
+    "factor": "N_S",
+    "factorTitle": "حسی / شهودی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "شهودی (N)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (شهودی (N)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به شهودی (N) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_31",
+    "text": "همدلی کردن و درک احساسات دیگران برایم بسیار مهم است.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_32",
+    "text": "در تصمیم‌گیری‌ها منطق و تحلیل عینی را به احساسات ترجیح می‌دهم.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_33",
+    "text": "حفظ هارمونی و صلح در روابط برایم اولویت دارد.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_34",
+    "text": "بحث‌های چالش‌برانگیز منطقی را حتی اگر کسی ناراحت شود دوست دارم.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_35",
+    "text": "اغلب تصمیماتم را بر اساس ندای قلبم و ارزش‌های درونی می‌گیرم.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_36",
+    "text": "عدالت و انصاف برایم مهم‌تر از رحم و شفقت است.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_37",
+    "text": "تحسین کردن دیگران برایم بسیار راحت و طبیعی است.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_38",
+    "text": "پیدا کردن ایرادات منطقی در یک سیستم یا استدلال برایم آسان است.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_39",
+    "text": "دوست دارم محیط کاری‌ام دوستانه و صمیمی باشد.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_40",
+    "text": "ترجیح می‌دهم روی اهداف و وظایف تمرکز کنم تا روابط شخصی.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_41",
+    "text": "ناراحتی دیگران سریعاً روی روحیه من هم تاثیر می‌گذارد.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_42",
+    "text": "در هنگام بروز بحران، می‌توانم احساساتم را کنار بگذارم و منطقی عمل کنم.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_43",
+    "text": "کمک کردن به افراد نیازمند برایم رضایت‌بخش‌ترین کار است.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_44",
+    "text": "نقد کردن صادقانه و مستقیم را به تعارفات ترجیح می‌دهم.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منطقی (T)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منطقی (T)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منطقی (T) است."
+    }
+  },
+  {
+    "id": "mq_45",
+    "text": "تلاش می‌کنم تصمیمی بگیرم که باعث خوشحالی همه شود.",
+    "factor": "F_T",
+    "factorTitle": "منطقی / احساسی",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "احساسی (F)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (احساسی (F)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به احساسی (F) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_46",
+    "text": "ترجیح می‌دهم برنامه‌ریزی دقیقی برای روزهایم داشته باشم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_47",
+    "text": "دوست دارم در کارها منعطف باشم و با جریان پیش بروم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_48",
+    "text": "بستن پرونده کارها و رسیدن به تصمیم نهایی به من آرامش می‌دهد.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_49",
+    "text": "اغلب گزینه‌هایم را باز می‌گذارم تا شاید اطلاعات جدیدی به دست بیاید.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_50",
+    "text": "نظم و ترتیب در محیط زندگی و کار برایم بسیار مهم است.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_51",
+    "text": "با بی‌نظمی مشکلی ندارم و می‌توانم در شرایط پیش‌بینی‌نشده کار کنم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_52",
+    "text": "اغلب کارها را پیش از فرا رسیدن مهلت مقرر تمام می‌کنم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_53",
+    "text": "بهترین ایده‌هایم معمولاً در لحظات آخر و تحت فشار زمان به ذهنم می‌رسد.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_54",
+    "text": "لیست کردن وظایف به من کمک می‌کند موثرتر باشم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_55",
+    "text": "تعهدات سفت و سخت گاهی باعث احساس خفگی در من می‌شود.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_56",
+    "text": "ترجیح می‌دهم اول کارم را تمام کنم بعد استراحت کنم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
+    }
+  },
+  {
+    "id": "mq_57",
+    "text": "ترکیب کردن کار با سرگرمی و تغییر برنامه برایم لذت‌بخش است.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_58",
+    "text": "دوست دارم قبل از سفر همه چیز را تا جزئیات برنامه‌ریزی کنم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": false,
+    "counselorInsight": {
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
     }
   },
   {
     "id": "mq_59",
-    "text": "شما مطمئن هستید که همه چیز برای شما خوب پیش خواهد رفت.",
-    "factor": "A_T",
-    "factorTitle": "هویت روانی و پایداری هیجانی (A / T)",
+    "text": "سفرهای بدون برنامه و کشف چیزهای جدید در لحظه را دوست دارم.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
+    "isReversed": true,
+    "counselorInsight": {
+      "targetTrait": "منعطف (P)",
+      "scoringMechanism": "معکوس (تمایل به قطب دوم)",
+      "clinicalSignificance": "این سوال قطب (منعطف (P)) را می‌سنجد. موافقت کاربر با این گزینه، نشان‌دهنده تمایل به منعطف (P) است."
+    }
+  },
+  {
+    "id": "mq_60",
+    "text": "نظم قوانین و ساختارها به من حس امنیت می‌دهد.",
+    "factor": "J_P",
+    "factorTitle": "ساختارگرا / منعطف",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هویت روانی و پایداری هیجانی (A / T)",
-      "scoringMechanism": "مستقیم (نمره مثبت به قطب غالب)",
-      "clinicalSignificance": "سنجش شاخص هویت روانی و پایداری هیجانی (A / T) در مدل ۵ بعدی شخصیت."
+      "targetTrait": "ساختارگرا (J)",
+      "scoringMechanism": "مستقیم (تمایل به قطب اول)",
+      "clinicalSignificance": "این سوال قطب (ساختارگرا (J)) را می‌سنجد. موافقت با این گزینه، گرایش فرد را به ساختارگرا (J) تایید می‌کند."
     }
   }
 ]

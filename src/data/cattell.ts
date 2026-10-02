@@ -104,7 +104,8 @@ export const cattellDefinition: TestDefinition = {
   title: 'Cattell 16 Personality Factor Questionnaire (16PF - Form 187)',
   persianTitle: 'پرسشنامه جامع ۱۶ عاملی کتل (فرم استاندارد ۱۸۷ سوالی)',
   subtitle: 'استاندارد مرجع سنجش ۱۶ صفت اولیه و ۵ عامل مرتبه دوم کلان شخصیت',
-  category: 'clinical',
+  category: 'personality',
+  popularity: 80,
   questionCount: 187,
   estimatedMinutes: 25,
   iconName: 'Activity',
@@ -126,9 +127,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (تمایل به پیوند اجتماعی و مصاحبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: تمایل به پیوند اجتماعی و مصاحبت."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -136,11 +137,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "شروع گفتگو با افراد کاملاً ناآشنا برای من کاری دشوار و معذب‌کننده است.",
     "factor": "A",
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (احتیاط و فاصله در روابط تازه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل A: گوشه‌گیر، سرد و دیرجوش. اهمیت بالینی: احتیاط و فاصله در روابط تازه."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -150,9 +151,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (صمیمیت هیجانی و گرمی رابطه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: صمیمیت هیجانی و گرمی رابطه."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -160,11 +161,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم کارهایی را انتخاب کنم که نیازی به تعامل مستقیم با مشتریان و مردم نداشته باشد.",
     "factor": "A",
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (گرایش به مشاغل فردی و غیرارتباطی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل A: گوشه‌گیر، سرد و دیرجوش. اهمیت بالینی: گرایش به مشاغل فردی و غیرارتباطی."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -174,9 +175,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (همدلی و اشتراک هیجان مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: همدلی و اشتراک هیجان مثبت."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -184,11 +185,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در مهمانی‌ها معمولاً ترجیح می‌دهم در کنجی بنشینم و فقط ناظر باشم.",
     "factor": "A",
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (گوشه‌گیری و انزوای موقعیتی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل A: گوشه‌گیر، سرد و دیرجوش. اهمیت بالینی: گوشه‌گیری و انزوای موقعیتی."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -198,9 +199,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (راحتی در ابراز صمیمیت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: راحتی در ابراز صمیمیت."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -208,11 +209,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "افرادی که خیلی سریع خودمانی می‌شوند و صمیمیت بیش از حد نشان می‌دهند مرا کلافه می‌کنند.",
     "factor": "A",
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (مرزگذاری خشک در برابر نزدیک‌شدن عاطفی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل A: گوشه‌گیر، سرد و دیرجوش. اهمیت بالینی: مرزگذاری خشک در برابر نزدیک‌شدن عاطفی."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -222,9 +223,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (گرایش به مشارکت در جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: گرایش به مشارکت در جمع."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -232,11 +233,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم مشکلات و افکارم را پیش خودم نگه دارم تا اینکه با دیگران درمیان بگذارم.",
     "factor": "A",
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (توداری و ترجیح خلوت فردی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل A: گوشه‌گیر، سرد و دیرجوش. اهمیت بالینی: توداری و ترجیح خلوت فردی."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -246,9 +247,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth) (خونگرمی و گشودگی اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل A: خونگرم، صمیمی و اهل پیوند اجتماعی. اهمیت بالینی: خونگرمی و گشودگی اجتماعی."
+      "targetTrait": "مردم‌آمیزی در برابر مردم‌گریزی (Warmth)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «مردم‌آمیزی در برابر مردم‌گریزی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -258,9 +259,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (سرعت پردازش منطقی و ادراک انتزاعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: سرعت پردازش منطقی و ادراک انتزاعی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -268,11 +269,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "درک الگوهای جبری و نمودارهای آماری انتزاعی برای من کاری مبهم و خسته‌کننده است.",
     "factor": "B",
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (چالش در تفکر تحلیلی نمادین)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل B: تفکر عینی، ساده و نیاز به زمان بیشتر برای درک مسائل پیچیده. اهمیت بالینی: چالش در تفکر تحلیلی نمادین."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -282,9 +283,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (شناسایی تناقضات استدلالی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: شناسایی تناقضات استدلالی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -294,9 +295,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (استدلال قیاسی و طبقه‌بندی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: استدلال قیاسی و طبقه‌بندی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -304,11 +305,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "حل فرمول‌های ریاضی و منطقی نیازمند زمان و انرژی بسیار زیادی از من است.",
     "factor": "B",
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (کندی در تجزیه و تحلیل نمادین)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل B: تفکر عینی، ساده و نیاز به زمان بیشتر برای درک مسائل پیچیده. اهمیت بالینی: کندی در تجزیه و تحلیل نمادین."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -318,9 +319,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (درک تشابهات مفهومی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: درک تشابهات مفهومی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -328,11 +329,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی در فهمیدن دستورالعمل‌های فنی و کاتالوگ‌های پیچیده دستگاه‌ها دچار سردرگمی می‌شوم.",
     "factor": "B",
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (دشواری در استدلال مکانیکی-دیداری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل B: تفکر عینی، ساده و نیاز به زمان بیشتر برای درک مسائل پیچیده. اهمیت بالینی: دشواری در استدلال مکانیکی-دیداری."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -342,9 +343,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (حافظه کاری و استدلال تحلیلی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: حافظه کاری و استدلال تحلیلی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -354,9 +355,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (برنامه‌ریزی راهبردی و پیش‌نگری ذهنی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: برنامه‌ریزی راهبردی و پیش‌نگری ذهنی."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -366,9 +367,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (فشار بر حافظه فعال کوتاه مدت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل B: تفکر عینی، ساده و نیاز به زمان بیشتر برای درک مسائل پیچیده. اهمیت بالینی: فشار بر حافظه فعال کوتاه مدت."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -378,9 +379,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (هوش سیال و استدلال تصویری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: هوش سیال و استدلال تصویری."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -388,11 +389,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "هنگام خواندن متون پیچیده فلسفی یا علمی، خط استدلال نویسنده را به سادگی گم می‌کنم.",
     "factor": "B",
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (تمرکز استدلالی در مفاهیم سنگین)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل B: تفکر عینی، ساده و نیاز به زمان بیشتر برای درک مسائل پیچیده. اهمیت بالینی: تمرکز استدلالی در مفاهیم سنگین."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -402,9 +403,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "استدلال و تفکر انتزاعی (Reasoning)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning) (قضاوت عقلانی بر پایه شواهد)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل B: توانایی تحلیل ذهنی، استدلال و هوش عمومی بالا. اهمیت بالینی: قضاوت عقلانی بر پایه شواهد."
+      "targetTrait": "استدلال و تفکر انتزاعی (Reasoning)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «استدلال و تفکر انتزاعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -414,9 +415,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (تاب‌آوری در برابر ناکامی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: تاب‌آوری در برابر ناکامی."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -424,11 +425,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "حوادث ناگوار و ناکامی‌های روزمره می‌توانند خلق و خوی مرا برای ساعت‌ها برهم بریزند.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (نوسان‌پذیری خلقی ناشی از تنش)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: نوسان‌پذیری خلقی ناشی از تنش."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -438,9 +439,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (پختگی هیجانی و کنترل خشم)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: پختگی هیجانی و کنترل خشم."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -448,11 +449,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی اوقات احساس می‌کنم کنترل عواطف و هیجاناتم کاملاً از دستم خارج می‌شود.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (تکانشگری و از دست رفتن مهار درونی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: تکانشگری و از دست رفتن مهار درونی."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -462,9 +463,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (ثبات رفتاری در موقعیت‌های حاد)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: ثبات رفتاری در موقعیت‌های حاد."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -472,11 +473,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "مسائل کوچک و بی‌اهمیت می‌توانند اعصاب مرا به شدت تحریک کنند.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (آستانه تحریک‌پذیری پایین)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: آستانه تحریک‌پذیری پایین."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -486,9 +487,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (سرعت بازیابی هیجانی (Rebound))",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: سرعت بازیابی هیجانی (Rebound)."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -496,11 +497,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "احساس شکست یا ناامیدی گاهی مرا برای چند روز زمین‌گیر و بی‌انرژی می‌کند.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (فرورفتن در حالات افسرده‌ساز)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: فرورفتن در حالات افسرده‌ساز."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -510,9 +511,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (پذیرش واقعیت‌محور)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: پذیرش واقعیت‌محور."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -520,11 +521,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترس از اتفاقات ناگوار آینده غالباً آرامش لحظه اکنون مرا سلب می‌کند.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (اضطراب انتظار و تهدیدپنداری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: اضطراب انتظار و تهدیدپنداری."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -534,9 +535,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (سازگاری منعطف با دگرگونی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: سازگاری منعطف با دگرگونی."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -544,11 +545,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی بدون هیچ دلیل مشخصی احساس دلمردگی، بغض یا بی‌قراری شدید می‌کنم.",
     "factor": "C",
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (بی‌ثباتی اندوژن در خلق)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل C: زودرنج، ناتوان در مهار اضطراب و تغییرپذیر. اهمیت بالینی: بی‌ثباتی اندوژن در خلق."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -558,9 +559,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability) (مهار هیجانی شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل C: آرام، صبور، باثبات و سازگار با تنش‌های محیطی. اهمیت بالینی: مهار هیجانی شناختی."
+      "targetTrait": "پایداری هیجانی در برابر ناپایداری (Emotional Stability)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «پایداری هیجانی در برابر ناپایداری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -568,11 +569,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من در جمع‌ها و گروه‌ها معمولاً نقش هدایت‌کننده را بر عهده می‌گیرم و ترسی از بیان نظراتم ندارم.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": false,
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (جسارت رهبری و اعمال نظر)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: جسارت رهبری و اعمال نظر."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -580,11 +581,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم از دستورات دیگران اطاعت کنم تا اینکه بار سنگین تصمیم‌گیری را به دوش بکشم.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (اطاعت‌پذیری و تمایل به پیروی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: اطاعت‌پذیری و تمایل به پیروی."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -594,9 +595,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (قاطعیت و ابراز وجود شجاعانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: قاطعیت و ابراز وجود شجاعانه."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -604,11 +605,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در مباحثات گروهی اغلب ترجیح می‌دهم کوتاه بیایم تا تنشی پیش نیاید.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (سازش‌کاری و اجتناب از تقابل)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: سازش‌کاری و اجتناب از تقابل."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -618,9 +619,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (تصویر اقتدار و نفوذ فردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: تصویر اقتدار و نفوذ فردی."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -628,11 +629,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به آسانی تحت تاثیر افراد کاریزماتیک و با اعتماد به نفس قرار می‌گیرم و تسلیم می‌شوم.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (انقیادپذیری در برابر نفوذ دیگران)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: انقیادپذیری در برابر نفوذ دیگران."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -642,9 +643,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (انگیزه رقابت و برتری‌جویی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: انگیزه رقابت و برتری‌جویی."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -654,9 +655,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (فروتنی و اجتناب از ریاست)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: فروتنی و اجتناب از ریاست."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -666,9 +667,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (عدم همرنگی و استقلال رأی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: عدم همرنگی و استقلال رأی."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -676,11 +677,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "انتقاد تند از سوی دیگران معمولاً باعث عقب‌نشینی و سکوت من در گفتگو می‌شود.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (تضعیف اراده در برابر انتقاد)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: تضعیف اراده در برابر انتقاد."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -690,9 +691,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (هدایتگری اجرایی و مداخله مستقیم)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: هدایتگری اجرایی و مداخله مستقیم."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -700,11 +701,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "احساس می‌کنم دیگران به راحتی نظرات خود را به من تحمیل می‌کنند.",
     "factor": "E",
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (مرزهای ضعیف در دفاع از موضع)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل E: فروتن، سازگار، مطیع و آرام. اهمیت بالینی: مرزهای ضعیف در دفاع از موضع."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -714,9 +715,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance) (اصول‌گرایی قاطعانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل E: قاطع، مقتدر، جسور و اهل رقابت و رهبری. اهمیت بالینی: اصول‌گرایی قاطعانه."
+      "targetTrait": "سلطه‌گری در برابر تسلیم‌پذیری (Dominance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سلطه‌گری در برابر تسلیم‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -726,9 +727,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (تولید شور و هیجان مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: تولید شور و هیجان مثبت."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -738,9 +739,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (جدیت و احتیاط در ابراز هیجان)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: جدیت و احتیاط در ابراز هیجان."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -750,9 +751,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (هیجان‌خواهی و جسارت تجربی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: هیجان‌خواهی و جسارت تجربی."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -760,11 +761,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم همیشه سنجیده، آرام و باوقار رفتار کنم تا مبادا نسنجیده به نظر برسم.",
     "factor": "F",
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (وقار، بازداری و خویشتن‌داری رفتاری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: وقار، بازداری و خویشتن‌داری رفتاری."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -774,9 +775,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (بیان پرحرارت و برانگیزاننده)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: بیان پرحرارت و برانگیزاننده."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -786,9 +787,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (ساکت بودن و بازداری کلامی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: ساکت بودن و بازداری کلامی."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -798,9 +799,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (خوش‌بینی ذاتی و سبکبالی روانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: خوش‌بینی ذاتی و سبکبالی روانی."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -808,11 +809,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "اغلب اوقات آینده را با نگرانی و با نگاهی خاکستری و محتاطانه ارزیابی می‌کنم.",
     "factor": "F",
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (بدبینی و احتیاط تلخ‌اندیشانه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: بدبینی و احتیاط تلخ‌اندیشانه."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -822,9 +823,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (شور پایدار در محافل شاد)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: شور پایدار در محافل شاد."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -832,11 +833,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "سر و صداهای جشن و شلوغی‌های بیش از حد سریعاً مرا خسته و کلافه می‌کند.",
     "factor": "F",
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (حساسیت به اضافه بار حسی محافل)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: حساسیت به اضافه بار حسی محافل."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -846,9 +847,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (شاخص شادابی اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: شاخص شادابی اجتماعی."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -856,11 +857,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به سختی می‌توانم در جمع‌های ناشناخته رها و راحت باشم و بخندم.",
     "factor": "F",
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (انقباض رفتاری در جمع‌های ناآشنا)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل F: جدی، درون‌نگر، محتاط و تودار. اهمیت بالینی: انقباض رفتاری در جمع‌های ناآشنا."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -870,9 +871,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness) (تنوع‌طلبی و پویایی روزمره)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل F: پرشور، شوخ‌طبع، خوش‌بین و خودجوش. اهمیت بالینی: تنوع‌طلبی و پویایی روزمره."
+      "targetTrait": "سرزندگی و شور در برابر هشیاری خشک (Liveliness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «سرزندگی و شور در برابر هشیاری خشک» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -882,9 +883,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (پایبندی عمیق به تعهدات و قانون)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: پایبندی عمیق به تعهدات و قانون."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -892,11 +893,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی برای پیشبرد سریع‌تر کارها، نادیده گرفتن برخی قوانین دست‌وپاگیر را جایز می‌دانم.",
     "factor": "G",
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (قانون‌گریزی عمل‌گرایانه و میان‌بر)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل G: راحت‌طلب، قانون‌گریز و متمایل به نادیده گرفتن قواعد. اهمیت بالینی: قانون‌گریزی عمل‌گرایانه و میان‌بر."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -906,9 +907,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (کمال در وجدان شغلی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: کمال در وجدان شغلی."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -916,11 +917,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "پایبندی کورکورانه به مقررات خشک اداری را مانع خلاقیت و آزادی فردی می‌دانم.",
     "factor": "G",
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (انتقاد به فرمالیسم سازمانی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل G: راحت‌طلب، قانون‌گریز و متمایل به نادیده گرفتن قواعد. اهمیت بالینی: انتقاد به فرمالیسم سازمانی."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -930,9 +931,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (وفای به عهد و مسئولیت‌پذیری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: وفای به عهد و مسئولیت‌پذیری."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -940,11 +941,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی کارها را به فردا موکول می‌کنم و اهمال‌کاری سراغم می‌آید.",
     "factor": "G",
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (تعلل و سستی در انجام وظیفه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل G: راحت‌طلب، قانون‌گریز و متمایل به نادیده گرفتن قواعد. اهمیت بالینی: تعلل و سستی در انجام وظیفه."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -954,9 +955,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (اصول اخلاقی فرادست)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: اصول اخلاقی فرادست."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -964,11 +965,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به نظرم در دنیای امروز کسانی که زیادی مقید به قوانین هستند کلاهشان پس معرکه است.",
     "factor": "G",
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (نگاه ابزاری به مقررات)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل G: راحت‌طلب، قانون‌گریز و متمایل به نادیده گرفتن قواعد. اهمیت بالینی: نگاه ابزاری به مقررات."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -978,9 +979,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (وقت‌شناسی و نظم زمانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: وقت‌شناسی و نظم زمانی."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -988,11 +989,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "اگر مطمئن باشم کسی متوجه نمی‌شود، شاید برخی قوانین راهنمایی یا اداری را زیر پا بگذارم.",
     "factor": "G",
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (اطاعت شرطی از قانون)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل G: راحت‌طلب، قانون‌گریز و متمایل به نادیده گرفتن قواعد. اهمیت بالینی: اطاعت شرطی از قانون."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1002,9 +1003,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness) (باور به مشروعیت ساختار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل G: وظیفه‌شناس، مقید به اصول اخلاقی و دارای انضباط کاری. اهمیت بالینی: باور به مشروعیت ساختار."
+      "targetTrait": "قانون‌گرایی و باوجدانی (Rule-Consciousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «قانون‌گرایی و باوجدانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1014,9 +1015,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (جسارت و شجاعت تریبونی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: جسارت و شجاعت تریبونی."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1024,11 +1025,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "هنگام ورود به سالنی پر از افراد غریبه احساس دستپاچگی و خجالت‌زدگی شدید می‌کنم.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (اضطراب حضور در موقعیت ناآشنا)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: اضطراب حضور در موقعیت ناآشنا."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1038,9 +1039,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (نترسی در ریسک اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: نترسی در ریسک اجتماعی."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1048,11 +1049,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در جمع‌های تازه، ترجیح می‌دهم در حاشیه بمانم تا جلب توجه نکنم.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (پنهان‌کاری اجتماعی و فرار از نگاه‌ها)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: پنهان‌کاری اجتماعی و فرار از نگاه‌ها."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1062,9 +1063,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (مهارت آغازگری کلامی در جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: مهارت آغازگری کلامی در جمع."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1072,11 +1073,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "نگاه‌های سنگین اطرافیان باعث می‌شود دست و پایم را گم کنم.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (خودآگاهی مضطربانه بدنی در جمع)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: خودآگاهی مضطربانه بدنی در جمع."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1086,9 +1087,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (شجاعت رفتاری زیر فشار نگاه‌ها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: شجاعت رفتاری زیر فشار نگاه‌ها."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1096,11 +1097,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترس از اینکه مضحکه شوم مانع از ابراز بسیاری از دیدگاه‌هایم در جمع می‌شود.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (ترس از قضاوت و شرمساری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: ترس از قضاوت و شرمساری."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1110,9 +1111,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (عدم احساس حقارت در برابر قدرت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: عدم احساس حقارت در برابر قدرت."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1120,11 +1121,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "هنگامی که همه به من خیره می‌شوند، ضربان قلبم شدید شده و پوستم برافروخته می‌شود.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (پاسخ خودمختار شرم و اضطراب اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: پاسخ خودمختار شرم و اضطراب اجتماعی."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1132,11 +1133,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "از به چالش کشیدن نظرات دیگران در حضور جمع هیچ ابایی ندارم.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": false,
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (جسارت مناظره عمومی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: جسارت مناظره عمومی."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1144,11 +1145,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم پیامم را مکتوب ارسال کنم تا اینکه حضوری یا تلفنی درخواست کنم.",
     "factor": "H",
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (اجتناب از تعامل رو در رو)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل H: محجوب، کم‌رو، خجالتی و حساس به تهدیدات. اهمیت بالینی: اجتناب از تعامل رو در رو."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1158,9 +1159,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness) (نفوذ و تحرک‌بخشی جمعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل H: نترس در مواجهه با جمع، ماجراجو و پیشگام در روابط. اهمیت بالینی: نفوذ و تحرک‌بخشی جمعی."
+      "targetTrait": "جسارت اجتماعی در برابر کم‌رویی (Social Boldness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «جسارت اجتماعی در برابر کم‌رویی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1170,9 +1171,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (درک و حظ عمیق زیبایی‌شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل I: احساساتی، همدل، هنردوست و ظریف‌اندیش. اهمیت بالینی: درک و حظ عمیق زیبایی‌شناختی."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1180,11 +1181,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من انسانی عمل‌گرا و عینی هستم و رمانتیسم و احساسات شاعرانه برایم فایده‌ای ندارد.",
     "factor": "I",
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (عمل‌گرایی خشک و عاری از احساس)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل I: واقع‌گرا، منطقی، سرسخت و ناپذیرا نسبت به احساسات. اهمیت بالینی: عمل‌گرایی خشک و عاری از احساس."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1194,9 +1195,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (همدلی عاطفی عمیق و رقت قلب)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل I: احساساتی، همدل، هنردوست و ظریف‌اندیش. اهمیت بالینی: همدلی عاطفی عمیق و رقت قلب."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1204,11 +1205,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در تحلیل شرایط، داده‌های سخت علمی و آماری را بر دلسوزی‌های عاطفی ترجیح می‌دهم.",
     "factor": "I",
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (تصمیم‌گیری منطقی-عددی بدون مداخله حس)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل I: واقع‌گرا، منطقی، سرسخت و ناپذیرا نسبت به احساسات. اهمیت بالینی: تصمیم‌گیری منطقی-عددی بدون مداخله حس."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1218,9 +1219,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (حساسیت حسی-روانی لطیف)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل I: احساساتی، همدل، هنردوست و ظریف‌اندیش. اهمیت بالینی: حساسیت حسی-روانی لطیف."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1228,11 +1229,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "فیلم‌های اکشن، جنگی و واقع‌گرایانه را به درام‌های احساسی و رمانتیک ترجیح می‌دهم.",
     "factor": "I",
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (ترجیح ژانرهای زمخت و هیجانی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل I: واقع‌گرا، منطقی، سرسخت و ناپذیرا نسبت به احساسات. اهمیت بالینی: ترجیح ژانرهای زمخت و هیجانی."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1242,9 +1243,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (آسیب‌پذیری عاطفی از رفتارهای نامهربان)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل I: احساساتی، همدل، هنردوست و ظریف‌اندیش. اهمیت بالینی: آسیب‌پذیری عاطفی از رفتارهای نامهربان."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1252,11 +1253,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به نظرم احساساتی‌گری بیش از حد مانع پیشرفت و موفقیت در بازار کسب‌وکار است.",
     "factor": "I",
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (دیدگاه سرمایه‌محور در برابر لطافت طبع)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل I: واقع‌گرا، منطقی، سرسخت و ناپذیرا نسبت به احساسات. اهمیت بالینی: دیدگاه سرمایه‌محور در برابر لطافت طبع."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1266,9 +1267,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (توجه به ساحت روان و ظرایف ارتباط)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل I: احساساتی، همدل، هنردوست و ظریف‌اندیش. اهمیت بالینی: توجه به ساحت روان و ظرایف ارتباط."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1278,9 +1279,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity) (بی‌حوصلگی در مواجهه با ابراز احساسات)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل I: واقع‌گرا، منطقی، سرسخت و ناپذیرا نسبت به احساسات. اهمیت بالینی: بی‌حوصلگی در مواجهه با ابراز احساسات."
+      "targetTrait": "حساسیت عاطفی در برابر سرسختی (Sensitivity)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «حساسیت عاطفی در برابر سرسختی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1290,9 +1291,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (بدگمانی به مقاصد پنهان اطرافیان)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: بدگمانی به مقاصد پنهان اطرافیان."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1300,11 +1301,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به نیت خیر و صداقت اکثر انسان‌ها اعتماد دارم مگر خلاف آن ثابت شود.",
     "factor": "L",
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (خوش‌بینی و اعتماد اولیه به انسان‌ها)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل L: زودباور، پذیرنده، بی‌آلایش و خوش‌بین به دیگران. اهمیت بالینی: خوش‌بینی و اعتماد اولیه به انسان‌ها."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1314,9 +1315,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (گارد دفاعی و مراقبت بدبینانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: گارد دفاعی و مراقبت بدبینانه."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1326,9 +1327,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (زودباوری و گارد باز)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل L: زودباور، پذیرنده، بی‌آلایش و خوش‌بین به دیگران. اهمیت بالینی: زودباوری و گارد باز."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1338,9 +1339,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (تردید در چاپلوسی و تحسین دیگران)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: تردید در چاپلوسی و تحسین دیگران."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1350,9 +1351,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (کینه‌توزی و نبخشیدن خطاکار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: کینه‌توزی و نبخشیدن خطاکار."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1360,11 +1361,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من به سادگی از خطاهای عمدی دیگران می‌گذرم و بد به دل راه نمی‌دهم.",
     "factor": "L",
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (گذشت و عدم ثبت کینه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل L: زودباور، پذیرنده، بی‌آلایش و خوش‌بین به دیگران. اهمیت بالینی: گذشت و عدم ثبت کینه."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1374,9 +1375,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (تفسیر پارانوئید از نشانه‌های محیطی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: تفسیر پارانوئید از نشانه‌های محیطی."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1384,11 +1385,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "همکاری صادقانه در محیط‌های شغلی کاملاً دست‌یافتنی و رایج است.",
     "factor": "L",
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (اعتماد به سلامت فضای جمعی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل L: زودباور، پذیرنده، بی‌آلایش و خوش‌بین به دیگران. اهمیت بالینی: اعتماد به سلامت فضای جمعی."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1398,9 +1399,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "هوشیاری و سوءظن (Vigilance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "هوشیاری و سوءظن (Vigilance) (حفاظت سفت‌وسخت از اطلاعات فردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل L: دیرباور، شکاک، محتاط در اعتماد و مراقب. اهمیت بالینی: حفاظت سفت‌وسخت از اطلاعات فردی."
+      "targetTrait": "هوشیاری و سوءظن (Vigilance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «هوشیاری و سوءظن» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1410,9 +1411,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (غرق‌شدگی در انتزاع ذهنی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: غرق‌شدگی در انتزاع ذهنی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1420,11 +1421,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "حواس من همیشه به واقعیات زمینی، اشیای ملموس و رخدادهای اطرافم جمع است.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (حضور در لحظه عینی و واقع‌گرایی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: حضور در لحظه عینی و واقع‌گرایی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1434,9 +1435,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (کشش به سمت ابتکارات غیرمعمول)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: کشش به سمت ابتکارات غیرمعمول."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1444,11 +1445,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من آدمی کاملاً واقع‌بین، پراگماتیک و متمرکز بر امور کاربردی زندگی هستم.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (پراگماتیسم و کاربردگرایی عینی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: پراگماتیسم و کاربردگرایی عینی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1458,9 +1459,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (حواس‌پرتی ناشی از درگیری شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: حواس‌پرتی ناشی از درگیری شناختی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1468,11 +1469,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در حل مسائل روزمره، ساده‌ترین و سریع‌ترین مسیر عملی را برمی‌گزینم نه راه‌حل‌های پیچیده تئوریک.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (عمل‌گرایی مستقیم و بی‌حاشیه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: عمل‌گرایی مستقیم و بی‌حاشیه."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1482,9 +1483,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (تفکر اگزیستانسیال و فلسفی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: تفکر اگزیستانسیال و فلسفی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1492,11 +1493,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "بحث در مورد مسائل غیرقابل لمس و فرضی برایم کسالت‌بار و بیهوده است.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (اجتناب از فرضیات دور از ذهن)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: اجتناب از فرضیات دور از ذهن."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1506,9 +1507,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (تفکر واگرا و شکستن چارچوب‌ها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: تفکر واگرا و شکستن چارچوب‌ها."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1516,11 +1517,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم به جای خلق ایده‌های انتزاعی جدید، کارهای نیمه‌تمام فعلی را سامان دهم.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (تکمیل‌کنندگی وظایف عینی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: تکمیل‌کنندگی وظایف عینی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1530,9 +1531,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (تصویرسازی ذهنی غنی و ملموس)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: تصویرسازی ذهنی غنی و ملموس."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1540,11 +1541,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من جزئیات دقیق محیط فیزیکی اطرافم را به خوبی رصد و ثبت می‌کنم.",
     "factor": "M",
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (دقت بالا در ادراک حسی محیط)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل M: عمل‌گرا، متمرکز بر امور ملموس روزمره و واقع‌بین. اهمیت بالینی: دقت بالا در ادراک حسی محیط."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1554,9 +1555,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness) (انگیزش با آرمان‌های تخیلی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل M: غرق در ایده‌ها، تخیل‌گرا و خلاق در ذهن. اهمیت بالینی: انگیزش با آرمان‌های تخیلی."
+      "targetTrait": "خیال‌پردازی در برابر عمل‌گرایی (Abstractedness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خیال‌پردازی در برابر عمل‌گرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1566,9 +1567,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (سیاست رفتاری و کنترل زبان)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل N: تودار، سیاست‌مدار، هوشمند در روابط و مبادی آداب. اهمیت بالینی: سیاست رفتاری و کنترل زبان."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1576,11 +1577,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "انسانی بسیار ساده، روراست و بی‌شیله‌پیله هستم و حرف دلم را بی‌درنگ بیان می‌کنم.",
     "factor": "N",
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (صداقت کودکانه و بی‌پروایی در سخن)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل N: شفاف، بی‌شیله‌پیله، ساده‌دل و بی‌تعارف. اهمیت بالینی: صداقت کودکانه و بی‌پروایی در سخن."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1590,9 +1591,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (حفظ اسرار و توداری استراتژیک)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل N: تودار، سیاست‌مدار، هوشمند در روابط و مبادی آداب. اهمیت بالینی: حفظ اسرار و توداری استراتژیک."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1600,11 +1601,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "خیلی راحت سفره دلم را حتی پیش افراد تازه‌وارد باز می‌کنم.",
     "factor": "N",
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (عدم توانایی در کتمان و پنهان‌داری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل N: شفاف، بی‌شیله‌پیله، ساده‌دل و بی‌تعارف. اهمیت بالینی: عدم توانایی در کتمان و پنهان‌داری."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1614,9 +1615,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (هوش کلامی و تطبیق دیپلماتیک)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل N: تودار، سیاست‌مدار، هوشمند در روابط و مبادی آداب. اهمیت بالینی: هوش کلامی و تطبیق دیپلماتیک."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1624,11 +1625,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "تعارف کردن و رفتارهای مصلحت‌اندیشانه برای من تصنعی، دروغین و منزجرکننده است.",
     "factor": "N",
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (انزجار از مصلحت‌اندیشی‌های کلامی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل N: شفاف، بی‌شیله‌پیله، ساده‌دل و بی‌تعارف. اهمیت بالینی: انزجار از مصلحت‌اندیشی‌های کلامی."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1638,9 +1639,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (چهره پوکرفیس و دیپلماسی درونی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل N: تودار، سیاست‌مدار، هوشمند در روابط و مبادی آداب. اهمیت بالینی: چهره پوکرفیس و دیپلماسی درونی."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1650,9 +1651,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (صراحت لهجه بی‌پرده)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل N: شفاف، بی‌شیله‌پیله، ساده‌دل و بی‌تعارف. اهمیت بالینی: صراحت لهجه بی‌پرده."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1662,9 +1663,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (روان‌سنجی حسی مخاطب)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل N: تودار، سیاست‌مدار، هوشمند در روابط و مبادی آداب. اهمیت بالینی: روان‌سنجی حسی مخاطب."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1672,11 +1673,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "نمی‌توانم ناراحتی یا خوشحالی‌ام را پنهان کنم؛ همه چیز در چهره‌ام نمایان است.",
     "factor": "N",
     "factorTitle": "صراحت و محافظه‌کاری (Privateness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "صراحت و محافظه‌کاری (Privateness) (چهره شفاف و گویای هیجان)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل N: شفاف، بی‌شیله‌پیله، ساده‌دل و بی‌تعارف. اهمیت بالینی: چهره شفاف و گویای هیجان."
+      "targetTrait": "صراحت و محافظه‌کاری (Privateness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «صراحت و محافظه‌کاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1686,9 +1687,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (احساس گناه و خودسرزنش‌گری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: احساس گناه و خودسرزنش‌گری."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1698,9 +1699,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (خاطرجمعی و پذیرش خود)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: خاطرجمعی و پذیرش خود."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1710,9 +1711,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (فاجعه‌سازی و نشخوار مضطربانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: فاجعه‌سازی و نشخوار مضطربانه."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1720,11 +1721,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "آرامش درونی من پایدار است و به ندرت گرفتار افکار خودتخریب‌گر می‌شوم.",
     "factor": "O",
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (امنیت روانی و مصونیت از وسواس فکری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: امنیت روانی و مصونیت از وسواس فکری."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1734,9 +1735,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (آسیب‌پذیری شدید به قضاوت منفی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: آسیب‌پذیری شدید به قضاوت منفی."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1744,11 +1745,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "در برابر اشتباهات گذشته خودم را می‌بخشم و به سرعت رو به جلو حرکت می‌کنم.",
     "factor": "O",
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (شفقت به خود و بخشش درونی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: شفقت به خود و بخشش درونی."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1758,9 +1759,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (احساس انزوا و بی‌یاوری درونی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: احساس انزوا و بی‌یاوری درونی."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1768,11 +1769,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "اعتماد به نفسم به اندازه‌ای است که تایید دیگران معیار اصلی رضایت من نیست.",
     "factor": "O",
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (خوداتکایی ارزشی مستقل)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: خوداتکایی ارزشی مستقل."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1782,9 +1783,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (اضطراب شبانه و نشخوار هراسان)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: اضطراب شبانه و نشخوار هراسان."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1794,9 +1795,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (تفکیک واقع‌بینانه حیطه کنترل)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: تفکیک واقع‌بینانه حیطه کنترل."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1806,9 +1807,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (سوپراگوی خشن و کمال‌طلبی تنبیهی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: سوپراگوی خشن و کمال‌طلبی تنبیهی."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1818,9 +1819,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (امیدواری شناختی پایدار)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل O: خاطرجمع، دارای اعتماد به نفس بالا و مقاوم به استرس. اهمیت بالینی: امیدواری شناختی پایدار."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1830,9 +1831,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تمایل به نگرانی و سرزنش خود (Apprehension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension) (دغدغه‌مندی مفرط وسواسی نسبت به تقصیر)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل O: مضطرب، مستعد احساس گناه، ناایمن و حساس به انتقاد. اهمیت بالینی: دغدغه‌مندی مفرط وسواسی نسبت به تقصیر."
+      "targetTrait": "تمایل به نگرانی و سرزنش خود (Apprehension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تمایل به نگرانی و سرزنش خود» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1842,9 +1843,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (روحیه تحول‌خواهی و نقادی سنت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: روحیه تحول‌خواهی و نقادی سنت."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1852,11 +1853,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "آداب، رسوم، باورها و روش‌های محافظه‌کارانه گذشته را به آزمون و خطای ایده‌های نو ترجیح می‌دهم.",
     "factor": "Q1",
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (سنت‌گرایی و ترجیح ثبات)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: پایبند به سنت، محافظه‌کار و مقاوم در برابر تغییرات. اهمیت بالینی: سنت‌گرایی و ترجیح ثبات."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1866,9 +1867,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (تجدیدنظرطلبی ساختاری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: تجدیدنظرطلبی ساختاری."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1876,11 +1877,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "هرگونه دگرگونی اساسی و شتاب‌زده در سبک زندگی را پرریسک، نامطمئن و مایه پشیمانی می‌دانم.",
     "factor": "Q1",
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (احتیاط محافظه‌کارانه در تحولات)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: پایبند به سنت، محافظه‌کار و مقاوم در برابر تغییرات. اهمیت بالینی: احتیاط محافظه‌کارانه در تحولات."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1890,9 +1891,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (گشودگی به چالش‌های فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: گشودگی به چالش‌های فکری."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1900,11 +1901,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به قوانین و سنت‌های نیاکانمان بیشتر از نظریات مدرن و گذرا اعتماد دارم.",
     "factor": "Q1",
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (ارزش‌گذاری بر میراث گذشته)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: پایبند به سنت، محافظه‌کار و مقاوم در برابر تغییرات. اهمیت بالینی: ارزش‌گذاری بر میراث گذشته."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1914,9 +1915,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (انعطاف معرفت‌شناختی و نقادی خود)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: انعطاف معرفت‌شناختی و نقادی خود."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1924,11 +1925,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "از تغییر چیدمان محیط کار یا روش‌های روتین روزمره احساس ناراحتی می‌کنم.",
     "factor": "Q1",
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (مقاومت به تغییرات محیطی مأنوس)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: پایبند به سنت، محافظه‌کار و مقاوم در برابر تغییرات. اهمیت بالینی: مقاومت به تغییرات محیطی مأنوس."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1938,9 +1939,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (باور به ساختارشکنی سازنده)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: باور به ساختارشکنی سازنده."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1948,11 +1949,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "بهتر است اجازه دهیم کارها به همان شیوه امتحان‌پَس‌داده گذشته پیش بروند.",
     "factor": "Q1",
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (محافظه‌کاری عملکردی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: پایبند به سنت، محافظه‌کار و مقاوم در برابر تغییرات. اهمیت بالینی: محافظه‌کاری عملکردی."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1962,9 +1963,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change) (تشویق تحول‌طلبی سازمانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q1: انتقادگر، تحول‌طلب، نوآور و علاقه‌مند به شکستن کلیشه‌ها. اهمیت بالینی: تشویق تحول‌طلبی سازمانی."
+      "targetTrait": "گشودگی به تغییر و تحول‌خواهی (Openness to Change)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تغییر و تحول‌خواهی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1974,9 +1975,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (استقلال تصمیم‌گیری و فردگرایی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: مستقل، خودبسنده و ترجیح‌دهنده تصمیم‌گیری انفرادی. اهمیت بالینی: استقلال تصمیم‌گیری و فردگرایی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1984,11 +1985,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "حضور در گروه و اتکا به تصمیم‌گیری‌های جمعی را به تنهایی کارکردن ترجیح می‌دهم.",
     "factor": "Q2",
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (جمع‌گرایی و اتکا به خرد جمعی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: وابسته به گروه، پیرو جمع و نیازمند همراهی مداوم. اهمیت بالینی: جمع‌گرایی و اتکا به خرد جمعی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1998,9 +1999,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (آرامش در استقلال فردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: مستقل، خودبسنده و ترجیح‌دهنده تصمیم‌گیری انفرادی. اهمیت بالینی: آرامش در استقلال فردی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2008,11 +2009,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "برای احساس امنیت روانی نیازمند حمایت، همفکری و تایید مداوم دوستانم هستم.",
     "factor": "Q2",
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (نیاز به تایید و همبستگی جمعی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: وابسته به گروه، پیرو جمع و نیازمند همراهی مداوم. اهمیت بالینی: نیاز به تایید و همبستگی جمعی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2022,9 +2023,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (تفکر انفرادی در حل مسئله)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: مستقل، خودبسنده و ترجیح‌دهنده تصمیم‌گیری انفرادی. اهمیت بالینی: تفکر انفرادی در حل مسئله."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2032,11 +2033,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "تنها سفر رفتن یا تنهایی غذا خوردن در رستوران برایم احساس ناخوشایندی ایجاد می‌کند.",
     "factor": "Q2",
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (ناراحتی از تنهایی محیطی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: وابسته به گروه، پیرو جمع و نیازمند همراهی مداوم. اهمیت بالینی: ناراحتی از تنهایی محیطی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2046,9 +2047,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (خودبسندگی و پرهیز از اتلاف وقت در جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: مستقل، خودبسنده و ترجیح‌دهنده تصمیم‌گیری انفرادی. اهمیت بالینی: خودبسندگی و پرهیز از اتلاف وقت در جمع."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2056,11 +2057,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "کار در تیم‌های بزرگ برای من لذت‌بخش‌تر از انجام تک‌نفره یک پروژه است.",
     "factor": "Q2",
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (ترجیح کار تیمی بر عملکرد فردی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: وابسته به گروه، پیرو جمع و نیازمند همراهی مداوم. اهمیت بالینی: ترجیح کار تیمی بر عملکرد فردی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2070,9 +2071,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (تاب‌آوری انزوا در عملکرد شغلی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: مستقل، خودبسنده و ترجیح‌دهنده تصمیم‌گیری انفرادی. اهمیت بالینی: تاب‌آوری انزوا در عملکرد شغلی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2080,11 +2081,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "همرنگی با جمع و همراهی با تصمیم اکثریت برای من اولویت دارد.",
     "factor": "Q2",
     "factorTitle": "خودکفایی و فردگرایی (Self-Reliance)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance) (پیروی از هنجارهای گروهی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q2: وابسته به گروه، پیرو جمع و نیازمند همراهی مداوم. اهمیت بالینی: پیروی از هنجارهای گروهی."
+      "targetTrait": "خودکفایی و فردگرایی (Self-Reliance)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «خودکفایی و فردگرایی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2094,9 +2095,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (نظم فیزیکی و سازماندهی محیطی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: منظم، کنترل‌شده، دقیق، هدفمند و ساختارمند. اهمیت بالینی: نظم فیزیکی و سازماندهی محیطی."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2104,11 +2105,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "شلختگی، بی‌برنامگی یا نامرتب بودن مقطعی اتاق و میز کار برای من کاملاً قابل تحمل است.",
     "factor": "Q3",
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (راحت‌گیری در نظم ظاهری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: بی‌توجه به نظم، منعطف، نامقید به برنامه‌ریزی خشک. اهمیت بالینی: راحت‌گیری در نظم ظاهری."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2118,9 +2119,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (کمال‌گرایی و وسواس کیفیتی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: منظم، کنترل‌شده، دقیق، هدفمند و ساختارمند. اهمیت بالینی: کمال‌گرایی و وسواس کیفیتی."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2130,9 +2131,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (انعطاف و گریز از چارچوب‌های صلب)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: بی‌توجه به نظم، منعطف، نامقید به برنامه‌ریزی خشک. اهمیت بالینی: انعطاف و گریز از چارچوب‌های صلب."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -2142,9 +2143,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (تسلط بر خویشتن و مهار ارادی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: منظم، کنترل‌شده، دقیق، هدفمند و ساختارمند. اهمیت بالینی: تسلط بر خویشتن و مهار ارادی."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2152,11 +2153,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "گاهی کارهای مهم را رها می‌کنم تا ببینم شرایط به چه سمتی پیش می‌رود.",
     "factor": "Q3",
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (بی‌خیالی و پذیرش ابهام بدون کنترلگری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: بی‌توجه به نظم، منعطف، نامقید به برنامه‌ریزی خشک. اهمیت بالینی: بی‌خیالی و پذیرش ابهام بدون کنترلگری."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2166,9 +2167,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (برنامه‌ریزی دقیق گام‌به‌گام)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: منظم، کنترل‌شده، دقیق، هدفمند و ساختارمند. اهمیت بالینی: برنامه‌ریزی دقیق گام‌به‌گام."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2176,11 +2177,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "کمال‌گرایی افراطی را اتلاف وقت می‌دانم و به استانداردهای متوسط رضایت می‌دهم.",
     "factor": "Q3",
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (پراگماتیسم کیفی در برابر کمال‌گرایی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: بی‌توجه به نظم، منعطف، نامقید به برنامه‌ریزی خشک. اهمیت بالینی: پراگماتیسم کیفی در برابر کمال‌گرایی."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2190,9 +2191,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (سنجیدگی و انضباط فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: منظم، کنترل‌شده، دقیق، هدفمند و ساختارمند. اهمیت بالینی: سنجیدگی و انضباط فکری."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2200,11 +2201,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "زندگی با برنامه‌های پیش‌بینی‌نشده برایم بسیار جذاب‌تر از تقویم‌های پر از وظایف مقید است.",
     "factor": "Q3",
     "factorTitle": "کمال‌گرایی و انضباط فردی (Perfectionism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism) (علاقه به خودانگیختگی در برابر تقویم خشک)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q3: بی‌توجه به نظم، منعطف، نامقید به برنامه‌ریزی خشک. اهمیت بالینی: علاقه به خودانگیختگی در برابر تقویم خشک."
+      "targetTrait": "کمال‌گرایی و انضباط فردی (Perfectionism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «کمال‌گرایی و انضباط فردی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2214,9 +2215,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (بی‌قراری درونی و تکانش حرکتی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: بی‌قراری درونی و تکانش حرکتی."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2224,11 +2225,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من فردی صبور، بی‌عجله، ریلکس و با آرامش درونی بسیار عمیق هستم.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (آرامش عمیق و طمأنینه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: آرامش عمیق و طمأنینه."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2238,9 +2239,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (ناشکیبایی در برابر موانع کندکننده)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: ناشکیبایی در برابر موانع کندکننده."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2248,11 +2249,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "به ندرت احساس گرفتگی عضلانی، تپش قلب یا سردردهای ناشی از فشار عصبی دارم.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (آسودگی جسمی و فقدان تنش سوماتیک)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: آسودگی جسمی و فقدان تنش سوماتیک."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2262,9 +2263,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (سرریز تنش روانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: سرریز تنش روانی."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2272,11 +2273,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "من بعد از یک روز پرتنش به راحتی رها می‌شوم و خوابی عمیق و راحت را تجربه می‌کنم.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (قابلیت تخلیه استرس روزانه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: قابلیت تخلیه استرس روزانه."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2286,9 +2287,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (الگوی رفتاری تیپ A و شتاب‌زدگی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: الگوی رفتاری تیپ A و شتاب‌زدگی."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2296,11 +2297,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "می‌توانم ساعت‌ها بدون احساس نیاز به تغییر موقعیت در آرامش کامل به استراحت بپردازم.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (ظرفیت بالای سکون و درنگ)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: ظرفیت بالای سکون و درنگ."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2310,9 +2311,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (بی‌خوابی اضطرابی ناشی از تنش کارها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: بی‌خوابی اضطرابی ناشی از تنش کارها."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2320,11 +2321,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "حتی در شلوغ‌ترین روزهای کاری، خونسردی و ضرب‌آهنگ آرام خود را حفظ می‌کنم.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (مقاومت در برابر شتاب محیطی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: مقاومت در برابر شتاب محیطی."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2334,9 +2335,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (اضطراب زمان و عجله اگزیستانسیال)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: اضطراب زمان و عجله اگزیستانسیال."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2344,11 +2345,11 @@ export const cattellDefinition: TestDefinition = {
     "text": "آستانه مدارا و صبر من در برابر اشتباهات یا کندی دیگران بسیار بالاست.",
     "factor": "Q4",
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (صبر بالا در برابر کندی اطرافیان)",
-      "scoringMechanism": "نمره‌گذاری معکوس (ج = ۲، ب = ۱، الف = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: خونسرد، آسوده‌خاطر، بدون تنش عضلانی و صبور. اهمیت بالینی: صبر بالا در برابر کندی اطرافیان."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -2358,9 +2359,9 @@ export const cattellDefinition: TestDefinition = {
     "factorTitle": "تنش روانی و بی‌قراری (Tension)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "تنش روانی و بی‌قراری (Tension) (انفجار هیجانی ناشی از تنش تلنبارشده)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (الف = ۲، ب = ۱، ج = ۰)",
-      "clinicalSignificance": "سنجش عامل Q4: تحریک‌پذیر، پرتنش، بی‌قرار، عصبی و خستگی‌ناپذیر. اهمیت بالینی: انفجار هیجانی ناشی از تنش تلنبارشده."
+      "targetTrait": "تنش روانی و بی‌قراری (Tension)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «تنش روانی و بی‌قراری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   }
 ]

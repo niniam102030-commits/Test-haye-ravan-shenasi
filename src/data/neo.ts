@@ -43,7 +43,8 @@ export const neoDefinition: TestDefinition = {
   title: 'NEO Personality Inventory (NEO-120)',
   persianTitle: 'تست جامع ۵ عاملی شخصیت نئو (فرم استاندارد ۱۲۰ سوالی)',
   subtitle: 'کامل‌ترین الگوی روان‌سنجی ارزیابی صفات ۵‌گانه بزرگ شخصیت انسان',
-  category: 'development',
+  category: 'personality',
+  popularity: 95,
   questionCount: 120,
   estimatedMinutes: 20,
   iconName: 'Sparkles',
@@ -67,9 +68,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (اضطراب پایه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: اضطراب پایه."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -79,9 +80,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (تاب‌آوری هیجانی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: تاب‌آوری هیجانی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -91,9 +92,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (شرم و احساس بی‌ارزشی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: شرم و احساس بی‌ارزشی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -101,11 +102,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به ندرت دچار احساس غم عمیق، دلمردگی یا ناامیدی می‌شوم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (پایداری خلق در برابر افسردگی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: پایداری خلق در برابر افسردگی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -115,9 +116,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (نشخوار فکری و نگرانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: نشخوار فکری و نگرانی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -125,11 +126,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من اطمینان کاملی به قدرت شخصی‌ام در عبور از چالش‌های زندگی دارم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (خودکارآمدی هیجانی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: خودکارآمدی هیجانی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -137,11 +138,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به راحتی از کوره در می‌روم و زود عصبانی و پرخاشگر می‌شوم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": false,
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (خشم و تحریک‌پذیری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: خشم و تحریک‌پذیری."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -149,11 +150,11 @@ export const neoDefinition: TestDefinition = {
     "text": "کمتر پیش می‌آید که دچار احساس ترس، وحشت ناگهانی یا بی‌قراری شدید شوم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (ثبات سیستم عصبی خودمختار)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: ثبات سیستم عصبی خودمختار."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -163,9 +164,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (شکنندگی در برابر استرس)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: شکنندگی در برابر استرس."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -173,11 +174,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من ثبات عاطفی بالایی دارم و خلق و خویم به ندرت دچار دگرگونی‌های ناگهانی می‌شود.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (یکنواختی خلق)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: یکنواختی خلق."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -187,9 +188,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (پیش‌بینی‌های منفی‌گرایانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: پیش‌بینی‌های منفی‌گرایانه."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -199,9 +200,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (حساسیت بین‌فردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: حساسیت بین‌فردی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -211,9 +212,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (حالت‌های ناامیدی عمیق)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: حالت‌های ناامیدی عمیق."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -223,9 +224,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (سرعت آرام‌سازی عضلانی و ذهنی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: سرعت آرام‌سازی عضلانی و ذهنی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -235,9 +236,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (تکانشگری و اشتها/انگیزه مفرط)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: تکانشگری و اشتها/انگیزه مفرط."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -245,11 +246,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من قدرت مهار بالایی بر امیال ناگهانی خود دارم و تسلیم وسوسه نمی‌شوم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (مهار وسوسه و تکانه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: مهار وسوسه و تکانه."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -259,9 +260,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (پاسخ سوماتیک اضطراب)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: پاسخ سوماتیک اضطراب."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -269,11 +270,11 @@ export const neoDefinition: TestDefinition = {
     "text": "احساس می‌کنم توانایی ذهنی‌ام در حل بحران‌ها بالاست و دستپاچه نمی‌شوم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (خونسردی اجرایی در بحران)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: خونسردی اجرایی در بحران."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -283,9 +284,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (افسردگی نوسانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: افسردگی نوسانی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -295,9 +296,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (رهایی از نشخوار گذشته)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: رهایی از نشخوار گذشته."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -307,9 +308,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (اضطراب اجتماعی و خودآگاهی منفی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: اضطراب اجتماعی و خودآگاهی منفی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -317,11 +318,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به ندرت احساس درماندگی می‌کنم و همیشه راهی برای برون‌رفت می‌یابم.",
     "factor": "N",
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (تاب‌آوری شناختی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: تاب‌آوری شناختی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -331,9 +332,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (عدم تحمل ناکامی و پرخاش)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل N: حساس به تنش، مستعد اضطراب، نگرانی و نوسان خلق. اهمیت بالینی: عدم تحمل ناکامی و پرخاش."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -343,9 +344,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism) (استواری روانی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل N: آرام، تاب‌آور، خونسرد و باثبات هیجانی در بحران‌ها. اهمیت بالینی: استواری روانی."
+      "targetTrait": "روان‌رنجورخویی و ثبات هیجانی (Neuroticism)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «روان‌رنجورخویی و ثبات هیجانی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -355,9 +356,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (جامعه‌پذیری و گرمی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: جامعه‌پذیری و گرمی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -367,9 +368,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ترجیح خلوت فردی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: ترجیح خلوت فردی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -379,9 +380,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (سطح بالای انرژی مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: سطح بالای انرژی مثبت."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -391,9 +392,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (احتیاط و سکوت در جمع)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: احتیاط و سکوت در جمع."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -403,9 +404,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (سهولت در دوستیابی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: سهولت در دوستیابی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -413,11 +414,11 @@ export const neoDefinition: TestDefinition = {
     "text": "کمتر پیش می‌آید پیشقدم شوم تا با کسی که نمی‌شناسم سر صحبت را باز کنم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (پرهیز از پیشگامی در ارتباط)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: پرهیز از پیشگامی در ارتباط."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -427,9 +428,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ریتم فعال زندگی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: ریتم فعال زندگی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -437,11 +438,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من ترجیح می‌دهم کارهایم را با آرامش، سکون و بدون شتاب به انجام برسانم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ریتم کند و بدون هیاهو)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: ریتم کند و بدون هیاهو."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -451,9 +452,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (تولید جو شاداب و مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: تولید جو شاداب و مثبت."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -461,11 +462,11 @@ export const neoDefinition: TestDefinition = {
     "text": "انجام کارهای انفرادی را به مشارکت در پروژه‌های تیمی پر سر و صدا ترجیح می‌دهم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (استقلال در کار فردی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: استقلال در کار فردی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -475,9 +476,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ابراز وجود و نمایش‌طلبی مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: ابراز وجود و نمایش‌طلبی مثبت."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -487,9 +488,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (قاطعیت و پیشتازی در جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: قاطعیت و پیشتازی در جمع."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -499,9 +500,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (تغذیه روانی از جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: تغذیه روانی از جمع."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -509,11 +510,11 @@ export const neoDefinition: TestDefinition = {
     "text": "حضور طولانی در مکان‌های شلوغ انرژی روانی مرا کاملاً تخلیه می‌کند.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (افت انرژی در مکان‌های پرجمعیت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: افت انرژی در مکان‌های پرجمعیت."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -523,9 +524,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ابراز وجود قاطعانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: ابراز وجود قاطعانه."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -533,11 +534,11 @@ export const neoDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم به جای سخنرانی یا حضور فعال، در ردیف‌های عقب سالن بنشینم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (تمایل به درحاشیه‌ماندن)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: تمایل به درحاشیه‌ماندن."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -547,9 +548,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (هیجان‌خواهی مثبت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: هیجان‌خواهی مثبت."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -557,11 +558,11 @@ export const neoDefinition: TestDefinition = {
     "text": "تفریحات آرام مانند مطالعه کتاب یا پیاده‌روی در سکوت را به مهمانی‌های بزرگ ترجیح می‌دهم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ترجیح تفریحات آرام)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: ترجیح تفریحات آرام."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -571,9 +572,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (گرمی رفتاری پایدار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: گرمی رفتاری پایدار."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -581,11 +582,11 @@ export const neoDefinition: TestDefinition = {
     "text": "معمولاً فردی خوددار و آرام به نظر می‌رسم که هیجاناتش را بروز نمی‌دهد.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (خویشتن‌داری در ابراز هیجان)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: خویشتن‌داری در ابراز هیجان."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -595,9 +596,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (جذابیت بین‌فردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: جذابیت بین‌فردی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -605,11 +606,11 @@ export const neoDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم تعطیلات را در خانه استراحت کنم تا اینکه به سفرهای شلوغ بروم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (خانه‌نشینی در برابر گشت‌وگذار)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: خانه‌نشینی در برابر گشت‌وگذار."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -619,9 +620,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (قدرت اقناع اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل E: پرانرژی، معاشرتی، فعال، پیشگام و مشتاق به پیوند اجتماعی. اهمیت بالینی: قدرت اقناع اجتماعی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -629,11 +630,11 @@ export const neoDefinition: TestDefinition = {
     "text": "در مکالمات روزمره بیشتر شنونده خوبی هستم تا اینکه خودم متکلم وحده باشم.",
     "factor": "E",
     "factorTitle": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion) (ترجیح شنوندگی بر گویندگی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل E: درون‌گرا، آرام، مستقل، کم‌حرف و خودبسنده. اهمیت بالینی: ترجیح شنوندگی بر گویندگی."
+      "targetTrait": "برون‌گرایی و انرژی اجتماعی (Extraversion)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «برون‌گرایی و انرژی اجتماعی» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -643,9 +644,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (کنجکاوی فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: کنجکاوی فکری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -653,11 +654,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به ندرت وقت خود را صرف خیال‌پردازی، داستان‌سرایی یا رویاهای فکری می‌کنم.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (تمرکز بر واقعیت عینی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: تمرکز بر واقعیت عینی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -667,9 +668,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (حساسیت زیبایی‌شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: حساسیت زیبایی‌شناختی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -679,9 +680,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (محافظه‌کاری روش‌شناختی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: محافظه‌کاری روش‌شناختی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -691,9 +692,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (عطش دانش و یادگیری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: عطش دانش و یادگیری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -701,11 +702,11 @@ export const neoDefinition: TestDefinition = {
     "text": "تئوری‌های انتزاعی و بحث‌های فلسفی برای من خسته‌کننده، دور از عمل و بی‌فایده‌اند.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (پراگماتیسم ضدتئوری)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: پراگماتیسم ضدتئوری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -715,9 +716,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (ماجراجویی فرهنگی و حسی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: ماجراجویی فرهنگی و حسی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -725,11 +726,11 @@ export const neoDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم سبک زندگی و عادات روزانه‌ام کاملاً قابل پیش‌بینی، یکدست و بدون تغییر باشد.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (نیاز به یکنواختی و ساختار ثابت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: نیاز به یکنواختی و ساختار ثابت."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -739,9 +740,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (غنا و عمق هیجانی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: غنا و عمق هیجانی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -751,9 +752,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (رویکرد انتقادی به سنت‌ها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: رویکرد انتقادی به سنت‌ها."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -763,9 +764,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (پذیرش کثرت‌گرایی فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: پذیرش کثرت‌گرایی فکری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -773,11 +774,11 @@ export const neoDefinition: TestDefinition = {
     "text": "مسائل اخلاقی، سیاسی و اجتماعی را بیشتر سیاه و سفید می‌بینم تا نسبی و چندبعدی.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (تفکر مطلق‌گرا و دوگانه)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: تفکر مطلق‌گرا و دوگانه."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -787,9 +788,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (علاقه به هنر و فرهنگ)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: علاقه به هنر و فرهنگ."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -797,11 +798,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من فردی کاملاً عمل‌گرا هستم و علاقه‌ای به شعرسرایی و احساسات فانتزی ندارم.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (عمل‌گرایی خشک و دوری از خیال)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: عمل‌گرایی خشک و دوری از خیال."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -811,9 +812,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (خلاقیت کاربردی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: خلاقیت کاربردی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -821,11 +822,11 @@ export const neoDefinition: TestDefinition = {
     "text": "تغییر دکوراسیون یا تغییر مسیرهای همیشگی رفت‌وآمد مرا کلافه می‌کند.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (عادت‌زدگی و مقاومت در برابر تغییر روزمره)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: عادت‌زدگی و مقاومت در برابر تغییر روزمره."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -835,9 +836,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (تداعی حسی و زیبایی‌شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: تداعی حسی و زیبایی‌شناختی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -847,9 +848,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (باور به هنجارگرایی اخلاقی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: باور به هنجارگرایی اخلاقی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -859,9 +860,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (کشش به آینده‌پژوهی و نوآوری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: کشش به آینده‌پژوهی و نوآوری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -869,11 +870,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من به واقعیت‌های زمینی و ملموس می‌پردازم و در ابرها سیر نمی‌کنم.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (واقع‌بینی ملموس)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: واقع‌بینی ملموس."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -883,9 +884,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (تساهل و رواداری فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: تساهل و رواداری فکری."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -893,11 +894,11 @@ export const neoDefinition: TestDefinition = {
     "text": "آزمودن مسیرهای ناشناخته ریسکی بیهوده است و ترجیح می‌دهم از راه صاف بروم.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (محافظه‌کاری تجربی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: محافظه‌کاری تجربی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -907,9 +908,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (کنجکاوی روان‌شناختی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل O: کنجکاو، خلاق، هنردوست، ژرف‌اندیش و تحول‌خواه. اهمیت بالینی: کنجکاوی روان‌شناختی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -917,11 +918,11 @@ export const neoDefinition: TestDefinition = {
     "text": "زیبایی‌های هنری اهمیت چندانی در حل مشکلات واقعی و اقتصادی زندگی روزمره ندارند.",
     "factor": "O",
     "factorTitle": "گشودگی به تجربه و تفکر (Openness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "گشودگی به تجربه و تفکر (Openness) (نگاه فایده‌گرایانه مادی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل O: عمل‌گرا، پایبند به روش‌های سنتی، عینی و مقاوم به تغییر. اهمیت بالینی: نگاه فایده‌گرایانه مادی."
+      "targetTrait": "گشودگی به تجربه و تفکر (Openness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «گشودگی به تجربه و تفکر» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -931,9 +932,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (اعتماد بنیادین به انسان‌ها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: اعتماد بنیادین به انسان‌ها."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -941,11 +942,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به نظرم اکثر افراد در صورت داشتن فرصت، برای منافع خود دیگران را دور می‌زنند.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (سوءظن و دیرباوری اجتماعی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: سوءظن و دیرباوری اجتماعی."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -955,9 +956,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (نوع‌دوستی و ایثار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: نوع‌دوستی و ایثار."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -965,11 +966,11 @@ export const neoDefinition: TestDefinition = {
     "text": "برخی افراد مرا فردی سرسخت، دیرباور و اهل رقابت بی‌رحمانه می‌دانند.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (گرایش رقابتی شدید)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: گرایش رقابتی شدید."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -979,9 +980,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (فروتنی و نزاکت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: فروتنی و نزاکت."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -989,11 +990,11 @@ export const neoDefinition: TestDefinition = {
     "text": "در صورت لزوم، بدون تعارف و با تندی تمام از حقوق شخصی‌ام در برابر دیگران دفاع می‌کنم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (قاطعیت بر سر منافع بدون گذشت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: قاطعیت بر سر منافع بدون گذشت."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1003,9 +1004,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (صلح‌جویی و حل تعارض)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: صلح‌جویی و حل تعارض."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1013,11 +1014,11 @@ export const neoDefinition: TestDefinition = {
     "text": "تمایلی ندارم وقت ارزشمندم را برای شنیدن درددل‌ها و مشکلات دیگران هدر دهم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (مرزگذاری خشک عاطفی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: مرزگذاری خشک عاطفی."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1027,9 +1028,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (همدلی و دل‌رحمی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: همدلی و دل‌رحمی."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1039,9 +1040,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (راستی و صداقت رفتاری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: راستی و صداقت رفتاری."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1049,11 +1050,11 @@ export const neoDefinition: TestDefinition = {
     "text": "برای پیشبرد اهدافم، گاهی لازم است احساسات و ناراحتی اطرافیان را نادیده بگیرم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (ابزارانگاری دیگران در مسیر هدف)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: ابزارانگاری دیگران در مسیر هدف."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1063,9 +1064,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (روحیه همگرایی و تعاون)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: روحیه همگرایی و تعاون."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1075,9 +1076,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (بخشندگی و گذشت سریع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: بخشندگی و گذشت سریع."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1085,11 +1086,11 @@ export const neoDefinition: TestDefinition = {
     "text": "افرادی که زود احساساتی می‌شوند و عذرخواهی می‌کنند به نظرم ضعیف و آسیب‌پذیرند.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (ارزش‌گذاری سرسختی در برابر گذشت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: ارزش‌گذاری سرسختی در برابر گذشت."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1099,9 +1100,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (فداکاری به نفع جمع)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: فداکاری به نفع جمع."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1109,11 +1110,11 @@ export const neoDefinition: TestDefinition = {
     "text": "من ترجیح می‌دهم از دیگران برتر باشم تا اینکه صرفاً یکی از اعضای عادی گروه باشم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (برتری‌طلبی و فخرفروشی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: برتری‌طلبی و فخرفروشی."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1123,9 +1124,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (حسن‌ظن و دید مثبت به انسان‌ها)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: حسن‌ظن و دید مثبت به انسان‌ها."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1133,11 +1134,11 @@ export const neoDefinition: TestDefinition = {
     "text": "بسیاری از کسانی که وانمود می‌کنند دلسوزند، در واقع به دنبال منافع پنهان خود هستند.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (بدبینی نسبت به دلسوزی دیگران)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: بدبینی نسبت به دلسوزی دیگران."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1147,9 +1148,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (انضباط اخلاقی در تعامل)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: انضباط اخلاقی در تعامل."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1157,11 +1158,11 @@ export const neoDefinition: TestDefinition = {
     "text": "اگر کسی به من ضربه بزند، حتماً روزی تلافی خواهم کرد و کوتاه نمی‌آیم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (کینه‌ورزی و میل به انتقام)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: کینه‌ورزی و میل به انتقام."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1171,9 +1172,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (عطوفت و حمایتگری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: عطوفت و حمایتگری."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1181,11 +1182,11 @@ export const neoDefinition: TestDefinition = {
     "text": "در معاملات مالی و تجاری دلسوزی را کنار می‌گذارم و صرفاً بر سود متمرکز می‌شوم.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (تجارت‌محوری بدون ترحم)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: تجارت‌محوری بدون ترحم."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1193,11 +1194,11 @@ export const neoDefinition: TestDefinition = {
     "text": "ترجیح می‌دهم در برابر خطای کوچک دیگران چشم‌پوشی کنم تا بحث و تلخی ادامه پیدا نکند.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": false,
+    "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (مدارا و چشم‌پوشی حکیمانه)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل A: همدل، فداکار، صلح‌جو، نوع‌دوست، باگذشت و مورد اعتماد. اهمیت بالینی: مدارا و چشم‌پوشی حکیمانه."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1205,11 +1206,11 @@ export const neoDefinition: TestDefinition = {
     "text": "به نظر من هر کس باید فقط مراقب کلاه خودش باشد و نباید باری از دیگران برداشت.",
     "factor": "A",
     "factorTitle": "توافق‌پذیری و سازگاری (Agreeableness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness) (فردگرایی منفعت‌محور خشک)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل A: منتقد، رقابت‌طلب، سخت‌گیر، بی‌تعارف و شکاک. اهمیت بالینی: فردگرایی منفعت‌محور خشک."
+      "targetTrait": "توافق‌پذیری و سازگاری (Agreeableness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «توافق‌پذیری و سازگاری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1219,9 +1220,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (برنامه‌ریزی و تعهد به هدف)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: برنامه‌ریزی و تعهد به هدف."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1231,9 +1232,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (اهمال‌کاری و تاخیر)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: اهمال‌کاری و تاخیر."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1243,9 +1244,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (مسئولیت‌پذیری اخلاقی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: مسئولیت‌پذیری اخلاقی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1255,9 +1256,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (بی‌نظمی محیطی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: بی‌نظمی محیطی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1267,9 +1268,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (پشتکار و اراده پیشرفت)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: پشتکار و اراده پیشرفت."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1277,11 +1278,11 @@ export const neoDefinition: TestDefinition = {
     "text": "انگیزه درونی چندانی برای ارتقای رتبه حرفه‌ای یا کسب دستاوردهای بزرگ ندارم.",
     "factor": "C",
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (کمبود جاه‌طلبی و میل به درجا زدن)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: کمبود جاه‌طلبی و میل به درجا زدن."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1291,9 +1292,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (دقت بالا و استانداردگرایی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: دقت بالا و استانداردگرایی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1303,9 +1304,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (ضعف در مدیریت زمان)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: ضعف در مدیریت زمان."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1315,9 +1316,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (دوراندیشی و تدبیر)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: دوراندیشی و تدبیر."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1325,11 +1326,11 @@ export const neoDefinition: TestDefinition = {
     "text": "گاهی بدون تامل و محاسبه ریسک، دست به اقدامات نسنجیده، هیجانی و پرخطر می‌زنم.",
     "factor": "C",
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (تکانشگری اجرایی و شتاب‌زدگی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: تکانشگری اجرایی و شتاب‌زدگی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1339,9 +1340,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (وجدان پایدار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: وجدان پایدار."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1351,9 +1352,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (پشتکار در اتمام کار)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: پشتکار در اتمام کار."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1363,9 +1364,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (نیاز به نظم ساختارمند)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: نیاز به نظم ساختارمند."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1375,9 +1376,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (حواس‌پرتی و ضعف تمرکز)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: حواس‌پرتی و ضعف تمرکز."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1387,9 +1388,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (چشم‌انداز بلندمدت هدفمند)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: چشم‌انداز بلندمدت هدفمند."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1397,11 +1398,11 @@ export const neoDefinition: TestDefinition = {
     "text": "معمولاً اجازه می‌دهم زندگی خودش پیش برود و اهل برنامه‌ریزی سفت‌وسخت نیستم.",
     "factor": "C",
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (بی‌برنامگی و رهاسازی منفعل)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: بی‌برنامگی و رهاسازی منفعل."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1411,9 +1412,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (خودنظارتی اخلاقی)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: خودنظارتی اخلاقی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1423,9 +1424,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (فراموشکاری ناشی از بی‌نظمی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: فراموشکاری ناشی از بی‌نظمی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   },
   {
@@ -1435,9 +1436,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (تمرکز عمیق و انضباط فکری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: تمرکز عمیق و انضباط فکری."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1445,11 +1446,11 @@ export const neoDefinition: TestDefinition = {
     "text": "شروع یک کار سخت برایم به قدری عذاب‌آور است که دائماً بهانه‌تراشی می‌کنم.",
     "factor": "C",
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (مانع آغازگری به دلیل بی‌حوصلگی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: مانع آغازگری به دلیل بی‌حوصلگی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1459,9 +1460,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (انضباط مالی و حسابگری)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: انضباط مالی و حسابگری."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1469,11 +1470,11 @@ export const neoDefinition: TestDefinition = {
     "text": "خریدهای هیجانی و تصمیمات بدون پس‌انداز گاهی مرا دچار چالش مالی می‌کند.",
     "factor": "C",
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
-    "isReversed": true,
+    "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (ولخرجی و ضعف مهار مالی)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: ولخرجی و ضعف مهار مالی."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1483,9 +1484,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": false,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (اعتبار و خوش‌قولی حرفه‌ای)",
-      "scoringMechanism": "نمره‌گذاری مستقیم (۴ به ۰)",
-      "clinicalSignificance": "سنجش عامل C: منظم، هدفمند، وظیفه‌شناس، دقیق، خودانضباط و کوشا. اهمیت بالینی: اعتبار و خوش‌قولی حرفه‌ای."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "مستقیم (افزایش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده تمایل و همسویی با این ویژگی است."
     }
   },
   {
@@ -1495,9 +1496,9 @@ export const neoDefinition: TestDefinition = {
     "factorTitle": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
     "isReversed": true,
     "counselorInsight": {
-      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness) (تاب‌آوری پایین در برابر کارهای یکنواخت)",
-      "scoringMechanism": "نمره‌گذاری معکوس (۰ به ۴)",
-      "clinicalSignificance": "سنجش عامل C: راحت‌گیر، نامقید به برنامه‌ریزی صلب، منعطف و اهمال‌کار. اهمیت بالینی: تاب‌آوری پایین در برابر کارهای یکنواخت."
+      "targetTrait": "باوجدانی و مسئولیت‌پذیری (Conscientiousness)",
+      "scoringMechanism": "معکوس (کاهش نمره قطب اصلی)",
+      "clinicalSignificance": "این سوال شاخص «باوجدانی و مسئولیت‌پذیری» را ارزیابی می‌کند. پاسخ کاربر نشان‌دهنده مقاومت و دوری از این ویژگی است."
     }
   }
 ]

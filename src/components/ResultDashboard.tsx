@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TestResult, JobMatch } from '../types';
-import { RadarChart } from './RadarChart';
+import { TestVisualizations } from './TestVisualizations';
 import {
   Share2,
   Copy,
@@ -52,23 +52,31 @@ export const ResultDashboard: React.FC<ResultDashboardProps> = ({ result, onBack
   const [shareSuccess, setShareSuccess] = useState(false);
 
   const handleShareDirectly = async () => {
-    const text = generateFullCounselorTextReport(result);
+    let summaryText = `📊 نتیجه تست ${result.testTitle}\n`;
+    summaryText += `👤 نام: ${result.clientName || 'نامشخص'}\n`;
+    summaryText += `📅 تاریخ: ${result.date}\n`;
+    summaryText += `🎯 نتیجه اصلی: ${result.primaryResult.title} (${result.primaryResult.code})\n\n`;
+    summaryText += `شاخص‌ها:\n`;
+    result.factors.forEach((f) => {
+      summaryText += `▪️ ${f.name}: ${f.percentage}% (${f.levelText})\n`;
+    });
+    
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `پاسخ‌نامه آزمون ${result.testTitle} - ${result.clientName}`,
-          text: text,
+          title: `نتیجه تست ${result.testTitle}`,
+          text: summaryText,
         });
         setShareSuccess(true);
         setTimeout(() => setShareSuccess(false), 3000);
         return;
       } catch (e) {
-        // Fallback to clipboard
+        // Fallback
       }
     }
-    navigator.clipboard.writeText(text);
-    setCopiedType('full');
-    setTimeout(() => setCopiedType(null), 2500);
+    navigator.clipboard.writeText(summaryText);
+    setShareSuccess(true);
+    setTimeout(() => setShareSuccess(false), 3000);
   };
 
   const handleCopyFullReport = () => {
@@ -297,49 +305,7 @@ export const ResultDashboard: React.FC<ResultDashboardProps> = ({ result, onBack
         </div>
       )}
 
-      {/* Radar Chart Section (if multiple factors) */}
-      {result.factors.length >= 3 && (
-        <div className="glass-card rounded-3xl p-6 border border-slate-200/80 dark:border-slate-800/80 shadow-sm mb-6">
-          <h2 className="font-bold text-base text-slate-800 dark:text-slate-100 mb-2 text-center">
-            نمودار عنکبوتی توزیع فاکتورها (Radar Profile)
-          </h2>
-          <RadarChart data={radarData} size={280} color="#6366f1" />
-        </div>
-      )}
-
-      {/* Detailed Factors Progress Bars */}
-      <div className="glass-card rounded-3xl p-6 border border-slate-200/80 dark:border-slate-800/80 shadow-sm mb-6">
-        <h2 className="font-bold text-base text-slate-800 dark:text-slate-100 mb-4">
-          نمرات تفکیکی فاکتورها
-        </h2>
-
-        <div className="space-y-4">
-          {result.factors.map((f, i) => (
-            <div key={i} className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-slate-700/50">
-              <div className="flex justify-between items-center text-xs font-semibold mb-1.5">
-                <span className="text-slate-800 dark:text-slate-200">{f.name}</span>
-                <span className="text-slate-500 dark:text-slate-400">
-                  {f.score} از {f.maxScore} ({f.percentage}%)
-                </span>
-              </div>
-
-              <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 overflow-hidden mb-2">
-                <div
-                  className={`h-2 rounded-full ${getLevelColor(f.level)} transition-all duration-700`}
-                  style={{ width: `${f.percentage}%` }}
-                ></div>
-              </div>
-
-              <div className="flex justify-between items-center text-[11px]">
-                <span className="text-slate-500 dark:text-slate-400">{f.description}</span>
-                <span className="font-bold px-2 py-0.5 rounded text-[10px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
-                  {f.levelText}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <TestVisualizations result={result} />
 
       {/* Question-by-Question Accordion */}
       <div className="glass-card rounded-3xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm overflow-hidden mb-8">

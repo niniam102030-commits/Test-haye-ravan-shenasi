@@ -4,8 +4,11 @@ import { TestCard } from './components/TestCard';
 import { TestRunner } from './components/TestRunner';
 import { ResultDashboard } from './components/ResultDashboard';
 import { ClientsView } from './components/ClientsView';
+import { MyHistoryView } from './components/MyHistoryView';
 import { TwoPersonsMatchView } from './components/TwoPersonsMatchView';
 import { ProfileSelectModal } from './components/ProfileSelectModal';
+import { TestsTab } from './components/TestsTab';
+import { incrementUsage } from './utils/draftStorage';
 import { testsIndex } from './data';
 import {
   Compass,
@@ -15,6 +18,7 @@ import {
   RotateCcw,
   BookmarkCheck,
   Users,
+  History,
   ArrowRightLeft,
 } from 'lucide-react';
 import { TestDefinition, TestResult, DetailedAnswerItem, SavedDraft, ClientProfile } from './types';
@@ -55,6 +59,7 @@ function App() {
   }, [activeTest, activeResult, activeTab]);
 
   const handleStartTestAttempt = (id: string) => {
+    incrementUsage(id);
     const test = testsIndex[id];
     if (!test) return;
     // Always prompt who is taking the test
@@ -223,7 +228,7 @@ function App() {
             }`}
           >
             <Users size={15} />
-            <span>مراجعین و پرونده‌ها</span>
+            <span>{counselorMode ? 'پرونده مراجعین' : 'تاریخچه نتایج'}</span>
           </button>
 
           <button
@@ -240,61 +245,18 @@ function App() {
         </div>
 
         {/* Tab 1: Tests View */}
-        {activeTab === 'tests' && (
-          <div>
-            <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div>
-                <h2 className="text-xl font-bold text-slate-800 dark:text-white">آزمون‌های روان‌شناختی</h2>
-                <p className="text-slate-500 dark:text-slate-400 text-xs mt-0.5">
-                  ارزیابی استاندارد با ثبت زمان پاسخ‌دهی، نشانه‌گذاری سوالات و خروجی کامل
-                </p>
-              </div>
+          {activeTab === 'tests' && (
+            <TestsTab drafts={drafts} activeClient={activeClient} onStartTest={handleStartTestAttempt} />
+          )}
 
-              {activeClient && (
-                <div className="text-xs bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200/60 dark:border-indigo-800/60 text-indigo-700 dark:text-indigo-300 px-3 py-1.5 rounded-xl font-semibold self-start">
-                  ثبت به نام: {activeClient.name} ({activeClient.fileCode})
-                </div>
-              )}
-            </div>
-
-            {/* Development Tests Section */}
-            <h3 className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-3 mt-6 flex items-center gap-1.5">
-              <Compass size={15} /> توسعه فردی، شغلی و استعدادیابی
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {Object.values(testsIndex)
-                .filter((t) => t.category === 'development')
-                .map((test) => (
-                  <TestCard
-                    key={test.id}
-                    test={test}
-                    draft={drafts[test.id]}
-                    onStart={handleStartTestAttempt}
-                  />
-                ))}
-            </div>
-
-            {/* Clinical Tests Section */}
-            <h3 className="text-xs font-bold text-rose-500 uppercase tracking-wider mb-3 mt-6 flex items-center gap-1.5">
-              <AlertTriangle size={15} /> ارزیابی و غربالگری بالینی
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              {Object.values(testsIndex)
-                .filter((t) => t.category === 'clinical')
-                .map((test) => (
-                  <TestCard
-                    key={test.id}
-                    test={test}
-                    draft={drafts[test.id]}
-                    onStart={handleStartTestAttempt}
-                  />
-                ))}
-            </div>
-          </div>
-        )}
-
-        {/* Tab 2: Clients & Longitudinal Progress */}
-        {activeTab === 'clients' && <ClientsView onViewResult={(r) => setActiveResult(r)} />}
+          {/* Tab 2: Clients & Longitudinal Progress */}
+        {activeTab === 'clients' && (
+            counselorMode ? (
+              <ClientsView onViewResult={(r) => setActiveResult(r)} />
+            ) : (
+              <MyHistoryView onViewResult={(r) => setActiveResult(r)} />
+            )
+          )}
 
         {/* Tab 3: Two Persons Comparison Engine */}
         {activeTab === 'couples' && <TwoPersonsMatchView />}

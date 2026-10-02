@@ -136,7 +136,8 @@ export const youngSchemaDefinition: TestDefinition = {
   title: 'Young Schema Questionnaire (YSQ-S3)',
   persianTitle: 'تست طرحواره‌های یانگ (YSQ-S3)',
   subtitle: 'شناسایی تله‌های زندگی و الگوهای تکرارشونده',
-  category: 'clinical', // This triggers the clinical disclaimer
+  category: 'clinical',
+  popularity: 90, // This triggers the clinical disclaimer
   questionCount: 75,
   estimatedMinutes: 20,
   iconName: 'Brain',

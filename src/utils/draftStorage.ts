@@ -58,3 +58,7 @@ export const removeDraft = (testId: TestId): void => {
     console.error('Error removing draft from localStorage:', e);
   }
 };
+
+export const incrementUsage = (testId: string) => { try { const k = 'test_usage_' + testId; const curr = parseInt(localStorage.getItem(k)||'0'); localStorage.setItem(k, (curr+1).toString()); }catch(e){} };
+export const getUsage = (testId: string) => { try { return parseInt(localStorage.getItem('test_usage_' + testId)||'0'); }catch(e){return 0;} };
+

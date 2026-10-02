@@ -8,6 +8,11 @@ import { hollandDefinition } from './holland';
 import { gardnerDefinition } from './gardner';
 import { enrichDefinition } from './enrich';
 
+import { attachmentDefinition } from './attachment';
+import { eqDefinition } from './eq';
+import { darkTriadDefinition } from './darkTriad';
+import { viaDefinition } from './via';
+
 export const testsIndex: Record<string, TestDefinition> = {
   mbti: mbtiDefinition,
   cattell: cattellDefinition,
@@ -17,4 +22,8 @@ export const testsIndex: Record<string, TestDefinition> = {
   holland: hollandDefinition,
   gardner: gardnerDefinition,
   enrich: enrichDefinition,
+  attachment: attachmentDefinition,
+  eq: eqDefinition,
+  dark_triad: darkTriadDefinition,
+  via: viaDefinition,
 };

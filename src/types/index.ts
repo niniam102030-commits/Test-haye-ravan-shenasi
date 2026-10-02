@@ -1,6 +1,6 @@
-export type TestId = 'mbti' | 'cattell' | 'mmpi' | 'enneagram' | 'young_schema' | 'holland' | 'gardner' | 'neo' | 'enrich' | 'dass' | 'raven';
+export type TestId = 'mbti' | 'cattell' | 'mmpi' | 'enneagram' | 'young_schema' | 'holland' | 'gardner' | 'neo' | 'enrich' | 'dass' | 'raven' | 'attachment' | 'eq' | 'dark_triad' | 'via';
 
-export type TestCategory = 'development' | 'clinical';
+export type TestCategory = 'personality' | 'clinical' | 'relationship' | 'career';
 
 export interface Question {
   id: number | string;
@@ -149,6 +149,7 @@ export interface TestDefinition {
   persianTitle: string;
   subtitle: string;
   category: TestCategory;
+  popularity?: number;
   questionCount: number;
   estimatedMinutes: number;
   iconName: string;

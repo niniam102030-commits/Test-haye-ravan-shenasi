@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TestResult, TwoPersonsComparisonResult, ClientProfile } from '../types';
 import { getAllResults, getClients } from '../utils/clientStorage';
+import { testsIndex } from '../data';
 import { compareTwoPersons } from '../utils/couplesEngine';
 import {
   Users,
@@ -68,7 +69,7 @@ export const TwoPersonsMatchView: React.FC = () => {
         clientName: 'شخص اول (علی)',
         testId: 'neo',
         testTitle: 'تست جامع ۵ عاملی شخصیت نئو (NEO-120)',
-        category: 'development',
+        category: 'personality',
         date: '۱۴۰۳/۰۷/۱۰',
         timestamp: Date.now(),
         counselorModeUsed: true,
@@ -95,7 +96,7 @@ export const TwoPersonsMatchView: React.FC = () => {
         clientName: 'شخص دوم (مریم)',
         testId: 'neo',
         testTitle: 'تست جامع ۵ عاملی شخصیت نئو (NEO-120)',
-        category: 'development',
+        category: 'personality',
         date: '۱۴۰۳/۰۷/۱۰',
         timestamp: Date.now(),
         counselorModeUsed: true,
@@ -127,7 +128,7 @@ export const TwoPersonsMatchView: React.FC = () => {
       clientName: 'شخص اول (سارا)',
       testId: 'mbti',
       testTitle: 'تست مایرز-بریگز (MBTI)',
-      category: 'development',
+      category: 'personality',
       date: '۱۴۰۳/۰۷/۱۰',
       timestamp: Date.now(),
       counselorModeUsed: true,
@@ -153,7 +154,7 @@ export const TwoPersonsMatchView: React.FC = () => {
       clientName: 'شخص دوم (امیر)',
       testId: 'mbti',
       testTitle: 'تست مایرز-بریگز (MBTI)',
-      category: 'development',
+      category: 'personality',
       date: '۱۴۰۳/۰۷/۱۰',
       timestamp: Date.now(),
       counselorModeUsed: true,
@@ -268,12 +269,7 @@ export const TwoPersonsMatchView: React.FC = () => {
               onChange={(e) => setSelectedTestFilter(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold focus:ring-2 focus:ring-indigo-500 outline-none"
             >
-              <option value="mbti">مایرز-بریگز (MBTI ۶۰ سوالی)</option>
-              <option value="neo">تست ۵ عاملی نئو (NEO ۱۲۰ سوالی)</option>
-              <option value="cattell">۱۶ عاملی کتل (۱۸۷ سوالی)</option>
-              <option value="young_schema">طرحواره‌های یانگ (YSQ-S3)</option>
-              <option value="holland">رغبت‌سنج شغلی و سبک زندگی هالند</option>
-              <option value="enrich">رضایت ارتباطی انریچ</option>
+              {Object.values(testsIndex).map(t => (<option key={t.id} value={t.id}>{t.persianTitle}</option>))}
             </select>
           </div>
         </div>
